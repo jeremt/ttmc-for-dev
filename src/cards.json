@@ -1,7 +1,7 @@
 {
     "cards": [
         {
-            "theme": "Déclaration de Variables",
+            "theme": "Déclaration de Variables JS",
             "category": "dev-front",
             "questions": [
                 "Quel mot clé entre `let`, `var`, et `if` ne permet pas de déclarer une variable ?",
@@ -16,6 +16,24 @@
                 "Oui. JS est un langage au typage dynamique, ce qui fait que le type d'une variable peut changer n'importe quand.",
                 "On appelle cette syntaxe la destructuration. Par exemple: `const {name, age} = person;`",
                 "Le hoisting permet d'accéder à une variable avant sa déclaration. On utilise le mot clé var pour hoister une variable."
+            ]
+        },
+        {
+            "theme": "HTML",
+            "category": "dev-front",
+            "questions": [
+                "Quelle balise utilise-t-on pour afficher des images ?",
+                "Quelle sont les 2 balises qu'on utilise lorsqu'on ne veut pas de sémantique en particulier ?",
+                "Quel attribut utilise t'on pour ouvrir un lien dans un nouvel onglet ?",
+                "Quel attribut permet d'attendre que le HTML soit entièrement chargé avant d'executer le contenu d'une balise script ?",
+                "Quel préfixe d'attribut utilise-t-on généralement pour ajouter des informations d'accessibilité à une balise ? (+1 case si tu détailles d'acronyme)"
+            ],
+            "answers": [
+                "Il s'agit de la balise `<img />`",
+                "On utilise les balises `<div>` et `<span>`",
+                "On utilise l'attribut `target=\"_blank\"`",
+                "L'attribut `defer`, exemple : `<script defer src=\"index.js\"></script>`",
+                "Le prefix `aria-` qui signifie Accessible Rich Internet Applications"
             ]
         },
         {
@@ -106,6 +124,24 @@
                 "C'est Linus Torwald qui a inventé GIT en 2005.",
                 "On utilise le mot clé squash ou fixup. Fixup garde uniquement le dernier message et squash les gardent tous.",
                 "Elle permet d'appliquer le code d'un commit précis à notre état courant."
+            ]
+        },
+        {
+            "theme": "VSCode",
+            "category": "dev-tools",
+            "questions": [
+                "Quel est le nom complet de VSCode ?",
+                "Quel racourci permet de rechercher rapidement un fichier ?",
+                "Est-il possible d'utiliser git directement avec l'interface de VSCode ?",
+                "Quelle touche permet de créer plusieurs curseurs au clique pour écrire à plusieurs endroits en même temps ?",
+                "Comment faire pour changer le nombre d'espaces utilisés pour une tab dans le code ? (passer de 2 à 4 par exemple)"
+            ],
+            "answers": [
+                "Visual studio code",
+                "⌘+P sur Mac ou control+P sur Windows",
+                "Oui tout à fait ! C'est assez pratique d'ailleurs 😉",
+                "Il s'agit de la touche alt (⌥)",
+                "Il existe plusieurs solutions, on peut changer les settings généraux, ceux du workspace, ou utiliser un formatteur comme Prettier par exemple."
             ]
         },
         {
