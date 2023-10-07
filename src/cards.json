@@ -1,0 +1,148 @@
+{
+    "cards": [
+        {
+            "theme": "Déclaration de Variables",
+            "category": "dev-front",
+            "questions": [
+                "Quel mot clé entre `let`, `var`, et `if` ne permet pas de déclarer une variable ?",
+                "Quel est le mot clé est utilisé pour déclarer une variable dont la valeur ne doit pas changer ?",
+                "Est-ce qu'une variable peut changer de type après sa déclaration ?",
+                "Comment appelle t'on la syntaxe qui permet de déclarer plusieurs variable à partir des champs d'un object ?",
+                "Qu'est-ce que le hoisting et quel mot clé permet de hoister une variable ?"
+            ],
+            "answers": [
+                "`if`, c'est pour les conditions !",
+                "`const`",
+                "Oui. JS est un langage au typage dynamique, ce qui fait que le type d'une variable peut changer n'importe quand.",
+                "On appelle cette syntaxe la destructuration. Par exemple: `const {name, age} = person;`",
+                "Le hoisting permet d'accéder à une variable avant sa déclaration. On utilise le mot clé var pour hoister une variable."
+            ]
+        },
+        {
+            "theme": "React Hooks",
+            "category": "dev-front",
+            "questions": [
+                "Vrai ou faux ? Le capitaine crochet est l'ennemi juré de Peter Pan.",
+                "Par quel mot commence le nom des fonctions de type hook ?",
+                "Quel hook permet de récupérer une valeur dans un sous composant sans passer par les props ?",
+                "Pourquoi `useMemo()` retourne une fonction et pas directement une valeur ?",
+                "À quoi sert le hook `useCallback() ?`"
+            ],
+            "answers": [
+                "Vrai, même si j'avoue ça n'a pas grand chose à voir.",
+                "Elle commencent toujours par `use`. `useState()` ou `useEffect()` par exemple.",
+                "`useContext()`",
+                "Car la valeur doit pouvoir être recalculée en fonction des dépendances.",
+                "Il sert à memoifier une fonction pour éviter de la créer et donc déclencher un rendu des composants enfant qui l'utilisent."
+            ]
+        },
+        {
+            "theme": "TypeScript",
+            "category": "dev-front",
+            "questions": [
+                "TypeScript permet de rajouter à JavaScript des types ou des emojis ?",
+                "Dans le code `const n: number = 10;` le type est-il obligatoire ?",
+                "Une variable de type `Status` peut être égale à `'success'` ou `'error'`. À quoi ressemble le type `Status` ?",
+                "Quelle est la différence entre `as` et `satisfies` ?",
+                "`type A<T> = {[K in keyof T as K extends number ? never : K]: T[K];};` que fait ce type ?"
+            ],
+            "answers": [
+                "Des emojis ! (nan j'rigole)",
+                "Non car TypeScript peut l'inférer automatiquement.",
+                "`type Status = 'success' | 'error';`",
+                "`as` force la conversion alors que `satisfies` vérifie si la valeur et le type sont compatibles.",
+                "Il s'agit d'un 'mapped type'. Il supprime du type ses attributs de type `number`."
+            ]
+        },
+        {
+            "theme": "Protocole HTTP",
+            "category": "dev-back",
+            "questions": [
+                "HTTP signifie Hyper Text Transfer Protocol ou Hyper Techno Turtle Party ?",
+                "Quelle méthode HTTP utilise-t-on pour supprimer une donnée ?",
+                "Quelle est la différence entre les méthodes `PUT` et `PATCH` ?",
+                "Que signifie le status HTTP 403 ?",
+                "Quel est le temps d'expiration par défaut d'un cookie ? Quels attributs utilise-t-on sinon pour le spéficier ?"
+            ],
+            "answers": [
+                "Hyper Text Transfer Protocol, même si j'aurais préféré l'autre 🤷",
+                "`DELETE`",
+                "PUT remplace la resource alors que PATCH fait une mise à jour partielle.",
+                "403 Forbidden est le status HTTP utilisé lorsque la requête est comprise mais pas autorisée par le serveur.",
+                "Par défaut , un cookie expire à la fin de la session utilisateur. Sinon on peut utiliser Max-Age ou Expires pour le spécifier."
+            ]
+        },
+        {
+            "theme": "Requêtes SQL",
+            "category": "dev-back",
+            "questions": [
+                "SQL signifie Structured Query Language ou Secret Quantum Launcher ?",
+                "Quel mot clé utilise-t-on pour filtrer un `SELECT` en fonction d'une colonne ?",
+                "Cite moi au moins 2 type de JOIN. +1 case si tu sais expliquer la différence !",
+                "Quelle est la différence entre `PRIMARY KEY` et `FOREIGN KEY` ?",
+                "À quoi servent les RLS ?"
+            ],
+            "answers": [
+                "Structured Query Language",
+                "On utilise `WHERE`. Exemple : `SELECT * FROM a WHERE a.id = ?`",
+                "`INNER JOIN` retourne l'intersection des 2 tables, `LEFT JOIN` retourne les lignes de la 1er table + l'intersection (autres réponses valides acceptées).",
+                "`PRIMARY KEY` correspond à l'id de la table, `FOREIGN KEY` réference une autre table.",
+                "Ajouter des régles de sécurité sur la db."
+            ]
+        },
+        {
+            "theme": "GIT",
+            "category": "dev-tools",
+            "questions": [
+                "À quoi sert la commande `git push` ?",
+                "Quelle commande permet de lister les commits ?",
+                "Qui est l'inventeur de GIT ?",
+                "Quel mot clé utilise-t-on pour fusionner plusieurs commits ensemble lors d'un rebase ?",
+                "À quoi sert la commande `git cherry-pick` ?"
+            ],
+            "answers": [
+                "Elle permet d'envoyer ses commits en local sur la remote (github par exemple).",
+                "`git log`",
+                "C'est Linus Torwald qui a inventé GIT en 2005.",
+                "On utilise le mot clé squash ou fixup. Fixup garde uniquement le dernier message et squash les gardent tous.",
+                "Elle permet d'appliquer le code d'un commit précis à notre état courant."
+            ]
+        },
+        {
+            "theme": "Structures de données",
+            "category": "algo-paradigms",
+            "questions": [
+                "Si `arr.length === 3` renvoie `true`, combien d'éléments contient `arr` ?",
+                "Quels caractères utilise-t-on pour déclarer un tableau en JavaScript ?",
+                "Quelle est la différence entre les structures de données stack (pile) et queue ?",
+                "Quelle structure est la meilleure entre une liste chaînée et un tableau lorsqu'on doit souvent insérer des données ?",
+                "Quelle est la complexité temporelle en insertion dans un arbre rouge noir ?"
+            ],
+            "answers": [
+                "3 évidemment ! Et non, il n'y a pas de piège 😅",
+                "Comme dans beaucoup de langages, on utilise les crochets : `[]`.",
+                "Les deux ajoutent les éléments par le haut mais la pile les retire par le bas alors que la stack les retire par le haut.",
+                "C'est la liste chaînée car dans le cas d'un tableau on doit le recréer entièrement à chaque insertion.",
+                "`O(log(n))`, même chose pour l'accès et la suppression."
+            ]
+        },
+        {
+            "theme": "Base binaire",
+            "category": "algo-paradigms",
+            "questions": [
+                "Quels chiffres sont utilisés pour écrire du binaire ?",
+                "Quelle est la différence entre un bit et un octet (byte) ?",
+                "Combien fait le chiffre binaire 101010 en decimal ?",
+                "À quoi servent respectivement les operateurs `^`, `|`, `&`, et `~` (en JS par exemple) ? (avance de 1 par bonne réponse)",
+                "Décris les opérations binaires pour extraire le vert d'une couleur stockée dans un nombre."
+            ],
+            "answers": [
+                "On utilise les chiffres 1 et 0.",
+                "Un octet est un ensemble de 8 bits. `10010011` est un octet.",
+                "42",
+                "Il permet d'effectuer des opérations binaires. Dans le même ordre XOR, OR, AND et NOT.",
+                "`const green = (color >> 8) & 0xFF`"
+            ]
+        }
+    ]
+}
