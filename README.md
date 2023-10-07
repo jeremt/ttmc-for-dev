@@ -38,7 +38,37 @@ Chaque carte doit contenir :
 
 Attention, les questions doivent être de plus en plus dures !
 
-Enfin, essaye d'éviter les fautes d'orthographes, merci (et si tu en remarques dans les cartes existantes n'hésite pas à contribuer 😇).
+Par exemple le json :
+
+```json
+{
+    "theme": "Déclaration de Variables",
+    "category": "dev-front",
+    "questions": [
+        "Quel mot clé entre `let`, `var`, et `if` ne permet pas de déclarer une variable ?",
+        "Quel est le mot clé est utilisé pour déclarer une variable dont la valeur ne doit pas changer ?",
+        "Est-ce qu'une variable peut changer de type après sa déclaration ?",
+        "Comment appelle t'on la syntaxe qui permet de déclarer plusieurs variable à partir des champs d'un object ?",
+        "Qu'est-ce que le hoisting et quel mot clé permet de hoister une variable ?"
+    ],
+    "answers": [
+        "`if`, c'est pour les conditions !",
+        "`const`",
+        "Oui. JS est un langage au typage dynamique, ce qui fait que le type d'une variable peut changer n'importe quand.",
+        "On appelle cette syntaxe la destructuration. Par exemple: `const {name, age} = person;`",
+        "Le hoisting permet d'accéder à une variable avant sa déclaration. On utilise le mot clé var pour hoister une variable."
+    ]
+}
+```
+
+Génère la carte suivante :
+
+<img width="453" alt="image" src="https://github.com/jeremt/ttmc-for-dev/assets/1913169/58b665f5-71b4-4e3c-bf2e-157572a01e6e">
+
+
+> Enfin, essaye d'éviter les fautes d'orthographes, merci (et si tu en remarques dans les cartes existantes n'hésite pas à contribuer 😇).
+
+
 
 ## Tester le projet
 
