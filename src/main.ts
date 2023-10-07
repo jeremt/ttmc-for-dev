@@ -4,7 +4,6 @@ import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import rehypePrism from '@mapbox/rehype-prism';
 
-import './main.css';
 import data from './cards.json';
 
 // @ts-ignore

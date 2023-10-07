@@ -8,7 +8,10 @@
     --color-dev-front: #ff46b5;
     --color-dev-back: #a96ef4;
 }
-
+@page {
+    /* size: auto; */
+    margin: 0mm;
+}
 * {
     box-sizing: border-box;
 }
@@ -17,6 +20,8 @@ body {
     font-family: var(--font-body);
     font-weight: 700;
     font-size: 7px;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
 }
 
 #app {
