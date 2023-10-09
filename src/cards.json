@@ -37,6 +37,24 @@
             ]
         },
         {
+            "theme": "Framework JS",
+            "category": "dev-front",
+            "questions": [
+                "Peux-tu citer tous les frameworks JS créés depuis 2007 ?",
+                "À quoi sert Express JS ?",
+                "Quelle est la différence entre React et Next ?",
+                "Dans quel ordre sont sortis les frameworks Vue, Svelte et React ?",
+                "Quelle est la différence fondamental entre le modèle de Reactivité de Solid et React ?"
+            ],
+            "answers": [
+                "Que tu répondes oui ou non, tu as répondu à la question, bien joué !",
+                "Il permet de créer des backends et des APIs en Node JS.",
+                "Next est une surcouche de React permettant de genérer des components côté serveur.",
+                "React, Vue puis Svelte",
+                "React s'appuie sur le virtual DOM alors que Solid met à jour le DOM directement."
+            ]
+        },
+        {
             "theme": "React Hooks",
             "category": "dev-front",
             "questions": [
@@ -145,6 +163,24 @@
             ]
         },
         {
+            "theme": "Commandes shell",
+            "category": "dev-tools",
+            "questions": [
+                "La commande `cd` permet de changer de dossier ou d'écouter un CD ?",
+                "Quelle option de `ls` permet d'afficher les fichiers cachés (dot files)",
+                "Quel symbol utilise-t-on devant une variable pour accéder à sa valeur ?",
+                "Comment ajoute-on les droits d'écriture sur un fichier ?",
+                "Comment fait-on pour executer une commande en background en évitant qu'elle affiche des messages ?"
+            ],
+            "answers": [
+                "cd (change directory), permet de changer de dossier.",
+                "`ls -a`",
+                "On utilise `$`, par exemple `echo $PWD` affiche la variable PWD qui contient le dossier courant.",
+                "`chmod +w file.txt` ajoute les droits d'écritures pour tout type d'utilisateur",
+                "On utilise `&` suivi de `> /dev/null` pour rediriger les messages."
+            ]
+        },
+        {
             "theme": "Structures de données",
             "category": "algo-paradigms",
             "questions": [
@@ -176,8 +212,26 @@
                 "On utilise les chiffres 1 et 0.",
                 "Un octet est un ensemble de 8 bits. `10010011` est un octet.",
                 "42",
-                "Il permet d'effectuer des opérations binaires. Dans le même ordre XOR, OR, AND et NOT.",
+                "Ils effectuent des opérations binaires, ans le même ordre : XOR, OR, AND et NOT.",
                 "`const green = (color >> 8) & 0xFF`"
+            ]
+        },
+        {
+            "theme": "Design patterns",
+            "category": "algo-paradigms",
+            "questions": [
+                "Le design pattern Factory sert à créer des objets ou recycler des chaussures ?",
+                "À quoi sert un Singleton ?",
+                "Comment fonctionne le design pattern Observer ?",
+                "Explique la différence les patterns de création (creational patterns) et de structure (structural patterns).",
+                "Comment faire pour implementer le design pattern Iterator en JavaScript ?"
+            ],
+            "answers": [
+                "Créer des objets 🙄",
+                "Un Singleton permet de partager l'instance d'un objet globalement et s'assurer qu'il n'y ait qu'une seule instance.",
+                "On attache des observers à un objet ce qui permet de tous les notifier avec un event. C'est comme ça que fonctionne `addEventListener` en JS par exemple.",
+                "Création : l'instantiation des objets. Structure : la relation entre les objets.",
+                "En retournant un objet avec une methode `next: () => ({done, value})` et `[Symbol.iterator]: () => this`"
             ]
         }
     ]
