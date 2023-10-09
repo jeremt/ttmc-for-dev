@@ -21,13 +21,12 @@ const appEl = document.querySelector<HTMLDivElement>('#app')!;
         for (const answer of card.answers) {
             answers.push((await markdownParser.process(answer)).toString());
         }
-        console.log(questions);
         appEl.innerHTML += `
         <div class="card" style="--color: var(--color-${card.category})">
             <div class="header">
                 <img class="icon" src="/${card.category}.png" alt="${card.category}-logo" />
                 <div class="ttmc">Tu te mets combien en…</div>
-                <div class="theme">${card.theme}</div>
+                <div class="theme" style="--size: ${computeFontSizeToFitBox(card.theme, 140, 24, 'QuickSand')}px">${card.theme}</div>
             </div>
             <div class="questions">${questions
                 .map(
@@ -54,3 +53,39 @@ const appEl = document.querySelector<HTMLDivElement>('#app')!;
         `;
     }
 })();
+
+function computeFontSizeToFitBox(text: string, boxWidth: number, boxHeight: number, fontFamily: string) {
+    const container = document.createElement('div');
+    container.style.width = boxWidth + 'px';
+    container.style.height = boxHeight + 'px';
+    container.style.overflow = 'hidden';
+    container.style.position = 'absolute';
+    container.style.visibility = 'hidden';
+    document.body.appendChild(container);
+
+    let fontSize = 14;
+    const textElement = document.createElement('span');
+    textElement.style.fontFamily = fontFamily;
+    textElement.style.whiteSpace = 'wrap';
+
+    container.appendChild(textElement);
+
+    let low = 14;
+    let high = 24; // Adjust the upper bound as needed
+
+    while (low <= high) {
+        const mid = Math.floor((low + high) / 2);
+        textElement.style.fontSize = mid + 'px';
+        textElement.innerText = text;
+
+        if (textElement.offsetWidth <= boxWidth && textElement.offsetHeight <= boxHeight) {
+            fontSize = mid;
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
+
+    document.body.removeChild(container);
+    return fontSize;
+}

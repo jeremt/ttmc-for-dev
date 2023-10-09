@@ -63,8 +63,9 @@ body {
 
 .card .theme {
     grid-area: theme;
-    font-size: 14px;
-    line-height: 14px;
+    text-wrap: balance;
+    font-size: var(--size);
+    line-height: var(--size);
     font-family: var(--font-title);
     font-weight: 800;
     text-transform: uppercase;
