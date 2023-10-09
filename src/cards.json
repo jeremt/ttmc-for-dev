@@ -22,7 +22,7 @@
             "theme": "HTML",
             "category": "dev-front",
             "questions": [
-                "Quelle balise utilise-t-on pour afficher des images ?",
+                "Quelle balise afficher une image ?",
                 "Quelle sont les 2 balises qu'on utilise lorsqu'on ne veut pas de sémantique en particulier ?",
                 "Quel attribut utilise t'on pour ouvrir un lien dans un nouvel onglet ?",
                 "Quel attribut permet d'attendre que le HTML soit entièrement chargé avant d'executer le contenu d'une balise script ?",

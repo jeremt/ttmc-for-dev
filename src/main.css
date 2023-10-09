@@ -9,7 +9,7 @@
     --color-dev-back: #a96ef4;
 }
 @page {
-    /* size: auto; */
+    size: a4 portrait;
     margin: 0mm;
 }
 * {
@@ -17,9 +17,10 @@
 }
 
 body {
+    margin: 0;
     font-family: var(--font-body);
     font-weight: 700;
-    font-size: 7px;
+    font-size: 6.8pt;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
 }
@@ -27,15 +28,23 @@ body {
 #app {
     display: flex;
     flex-wrap: wrap;
+    width: 210mm;
+    height: 297mm;
+    gap: 3mm 5mm;
+    /* background-image: url(/patron.jpg); */
+    /* border: 0.5mm dashed magenta; */
+    background-size: 100% 100%;
+    padding: 13mm 7mm 13mm 9mm;
 }
 
 .card {
-    padding: 10px;
-    width: 182px;
-    height: 258px;
+    /* opacity: 0.5; */
+    padding: 3mm;
+    width: 61mm;
+    height: 88mm;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    border-radius: 3mm;
 }
 
 .card:has(.questions) {
@@ -53,8 +62,8 @@ body {
 
 .card .header {
     display: grid;
-    gap: 0 5px;
-    height: 45px;
+    gap: 0 1.2mm;
+    height: 20mm;
     justify-content: start;
     align-content: center;
     grid-auto-rows: min-content;
@@ -72,12 +81,12 @@ body {
 }
 
 .card.back .theme {
-    font-size: 20px;
+    font-size: 20pt;
 }
 
 .card .icon {
     grid-area: icon;
-    width: 32px;
+    width: 12mm;
     align-self: center;
 }
 
@@ -91,29 +100,29 @@ body {
 
 .card .question,
 .card .answer {
-    border-radius: 2px;
+    border-radius: 1mm;
     background-color: white;
     align-items: center;
 }
 
 .card .question {
-    border: 1px solid black;
+    border: 0.5mm solid black;
 }
 
 .card .answer {
-    border: 1px solid var(--color);
+    border: 0.5mm solid var(--color);
 }
 
 .card .question p,
 .card .answer p {
     margin: 0;
-    padding: 5px;
+    padding: 1.5mm;
     text-wrap: balance;
 }
 
 .card code {
     padding: 1px 2px;
-    font-size: 6px;
+    font-size: 6pt;
     font-family: Menlo, monospace;
     background-color: #eeeeee;
     border-radius: 3px;

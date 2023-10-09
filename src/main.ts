@@ -26,7 +26,7 @@ const appEl = document.querySelector<HTMLDivElement>('#app')!;
             <div class="header">
                 <img class="icon" src="/${card.category}.png" alt="${card.category}-logo" />
                 <div class="ttmc">Tu te mets combien en…</div>
-                <div class="theme" style="--size: ${computeFontSizeToFitBox(card.theme, 140, 24, 'QuickSand')}px">${card.theme}</div>
+                <div class="theme" style="--size: ${computeFontSizeToFitBox(card.theme, 135, 24, 'QuickSand')}pt">${card.theme}</div>
             </div>
             <div class="questions">${questions
                 .map(
@@ -35,7 +35,8 @@ const appEl = document.querySelector<HTMLDivElement>('#app')!;
                     `,
                 )
                 .join('')}</div>
-        </div>
+        </div>`;
+        appEl.innerHTML += `
         <div class="card back" style="--color: var(--color-${card.category})">
             <div class="header">
                 <img class="icon" src="/${card.category}.png" alt="${card.category}-logo" />
@@ -71,7 +72,7 @@ function computeFontSizeToFitBox(text: string, boxWidth: number, boxHeight: numb
     container.appendChild(textElement);
 
     let low = 14;
-    let high = 24; // Adjust the upper bound as needed
+    let high = 24;
 
     while (low <= high) {
         const mid = Math.floor((low + high) / 2);
