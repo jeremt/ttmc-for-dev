@@ -44,7 +44,7 @@
                 "À quoi sert Express JS ?",
                 "Quelle est la différence entre React et Next ?",
                 "Dans quel ordre sont sortis les frameworks Vue, Svelte et React ?",
-                "Quelle est la différence fondamental entre le modèle de Reactivité de Solid et React ?"
+                "Quelle est la différence fondamentale entre le modèle de Reactivité de Solid et React ?"
             ],
             "answers": [
                 "Que tu répondes oui ou non, tu as répondu à la question, bien joué !",
@@ -232,6 +232,42 @@
                 "On attache des observers à un objet ce qui permet de tous les notifier avec un event. C'est comme ça que fonctionne `addEventListener` en JS par exemple.",
                 "Création : l'instantiation des objets. Structure : la relation entre les objets.",
                 "En retournant un objet avec une methode `next: () => ({done, value})` et `[Symbol.iterator]: () => this`"
+            ]
+        },
+        {
+            "theme": "Requête HTTP",
+            "category": "dev-back",
+            "questions": [
+                "Une url HTTP commence t'elle par `http://` ou `html://` ?",
+                "Laquelle de ses méthodes n'existe pas en HTTP : `GET`, `POST`, `PASTE`, `DELETE` ?",
+                "Comment appelle-t-on la partie de la requête permettant de passer des données ?",
+                "À quoi servent les cookies ? 🍪",
+                "À quoi sert le status 218 ?"
+            ],
+            "answers": [
+                "`http://` 🙄",
+                "`PASTE`",
+                "Le `body`, il s'agit du texte directement après les headers.",
+                "À garder des données d'une requête à l'autre, des infos utilisateur par exemple.",
+                "À contourner le comportement d'Apache utilisé comme un reverse proxy dans le cas d'une erreur 404, mais si tu le savais pas c'est pas bien grave 😅"
+            ]
+        },
+        {
+            "theme": "Go",
+            "category": "dev-back",
+            "questions": [
+                "Quel mot clé utilise t'on pour déclarer une fonction ?",
+                "À quoi sert l'opérator `:=` ?",
+                "Quel opérateur utilise-t-on pour deréférencer un pointer ?",
+                "Quelle est la différence entre `array` et `slice` ?",
+                "Comment partage-t-on des données à travers plusieurs goroutines ?"
+            ],
+            "answers": [
+                "Le mot clé `func`.",
+                "Il permet de déclarer une variable avec une valeur en inférant son type automatiquement.",
+                "On utilise `*` comme en C.",
+                "Contrairement à aux arrays, les slices peuvent avoir une taille qui change dynamiquement.",
+                "On utilise les channels, déclarés avec le mot clé `chan`."
             ]
         }
     ]

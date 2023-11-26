@@ -4,6 +4,21 @@ Sorry but this is in french 🥖 😅
 
 Ce jeu de société inspiré de TTMC, "tu te mets combien" a pour but d'aider à developper sa culture dev tout en s'amusant.
 
+## Tester le projet
+
+1. Lance ses commandes dans ton terminal :
+
+```sh
+git clone git@github.com/jeremt/ttmc-for-dev.git
+cd ttmc-for-dev
+pnpm install # ou npm
+pnpm run dev # ou npm
+```
+
+2. Ouvre [cette url](http://localhost:5173/).
+
+_Le projet utilise vite pour se lancer mais il est écrit en Vanilla JavaScript à l'exception de rehype pour gérer le markdown dans le JSON des cartes._
+
 ## Pourquoi ?
 
 Lorsqu'on devient developpeur il y a énormément de vocabulaire, nouvelles notions et concepts à assimiler ce qui peut vite devenir compliquer à gérer. En plus, ce n'est pas toujours amusant d'emmagasiner toute cette théorie.
@@ -24,6 +39,12 @@ Il existe 4 catégories de questions :
 ### Tu as des idées mais tu n'as pas forcément la réponse ou tu ne sais pas comment les formuler ?
 
 J'ajoute les dans une issue sur le répo !
+
+### Tu as répéré une erreur / amélioration potentielle dans une carte existante ?
+
+Si jamais tu remarques une faute d'orthographe, un contenu pas clair ou imprécis, c'est une bonne raison de proposer une modification !
+
+Tu peux forker le repo et modifier `src/cards.json` pour y ajouter tes changements, puis soumettre une pull request ✨
 
 ### Tu as une idée précise de carte ? Encore mieux !
 
@@ -65,38 +86,21 @@ Génère la carte suivante :
 
 <img width="453" alt="image" src="https://github.com/jeremt/ttmc-for-dev/assets/1913169/58b665f5-71b4-4e3c-bf2e-157572a01e6e">
 
-
-> Enfin, essaye d'éviter les fautes d'orthographes, merci (et si tu en remarques dans les cartes existantes n'hésite pas à contribuer 😇).
-
-
-
-## Tester le projet
-
-1. Lance ses commandes dans ton terminal :
-
-```
-git clone git@github.com/jeremt/ttmc-for-dev.git
-cd ttmc-for-dev
-pnpm install
-pnpm run dev
-```
-
-2. Ouvre [cette url](http://localhost:5173/).
-
 ## Fonctionnalités
+
+Vous pouvez contribuer sur les fonctionnalités aussi si vous voulez 🙃 :
 
 -   [x] Générer les cartes par thème en fonction du Json
 -   [x] Implémenter le style pour chacune des cartes
--   [ ] Écris au moins 1 planche (9 cartes par thème)
--   [ ] Écrire une planche de `startGame();` et une planche de `return winner;`
--   [ ] Générer la disposition d'une planche à imprimer et gérer correctement le media print
 -   [x] Écrire les règles du jeu
 -   [x] Générer ou designer le plateau de jeu
 -   [x] Écrire une planche par cartes spéciales (bugs et pause café)
--   [ ] Générer les cartes spéciale à partir d'un Json
--   [ ] Trouver un autre nom
 -   [x] Faire un logo
+-   [ ] Écris au moins 1 planche (9 cartes par thème)
+-   [ ] Écrire une planche de `startGame();` et une planche de `return winner;`
+-   [ ] Générer correctement l'espacement entre les différentes pages à l'impression (pour avoir 9 cartes par page en faisant `⌘+P`)
+-   [ ] Faire en sorte d'avoir 9 cartes par page et 9 dos correspondant sur la page suivante (plutòt que les dos directement à la suite)
+-   [ ] Générer les cartes spéciales (bug, pause café, startGame et return winner) à partir d'un Json
+-   [ ] Trouver un autre nom
 -   [ ] Faire une landing page
 -   [ ] Faire une version en ligne
-
-_(Vous pouvez contribuer sur les fonctionnalités aussi si vous voulez 🙃)_
