@@ -269,6 +269,24 @@
                 "Contrairement à aux arrays, les slices peuvent avoir une taille qui change dynamiquement.",
                 "On utilise les channels, déclarés avec le mot clé `chan`."
             ]
+        },
+        {
+            "theme": "HTML",
+            "category": "dev-front",
+            "questions": [
+                "Quelle balise HTML est utilisée pour créer des liens hypertextes ?",
+                "Comment inclure une feuille de style externe dans une page HTML ?",
+                "Quel attribut HTML est utilisé pour définir du texte en exposant ?",
+                "Comment incorporer une vidéo avec des contrôles de lecture dans une page ?",
+                "Quel attribut permet de stocker des données personnalisées ?"
+            ],
+            "answers": [
+                "La balise pour les liens est `<a>`",
+                "Incluez une feuille de style externe avec `<link rel=\"stylesheet\" href=\"style.css\">`",
+                "L'attribut pour le texte en exposant est `<p>10<sup>2</sup></p>` (pour 10 au carré).",
+                "Intégrez une vidéo avec contrôles via `<video controls><source src=\"video.mp4\" type=\"video/mp4\"></video>`",
+                "Utilisez l'attribut `data-*` (par exemple, `data-info=\"valeur\"`)"
+            ]
         }
     ]
 }
