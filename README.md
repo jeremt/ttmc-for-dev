@@ -4,13 +4,11 @@ Sorry but this is in french 🥖 😅
 
 Ce jeu de société inspiré de TTMC, "tu te mets combien" a pour but d'aider à developper sa culture dev tout en s'amusant.
 
-## Tester le projet
+## Tester le projet en local
 
 1. Lance ses commandes dans ton terminal :
 
 ```sh
-git clone git@github.com/jeremt/ttmc-for-dev.git
-cd ttmc-for-dev
 pnpm install # ou npm
 pnpm run dev # ou npm
 ```
