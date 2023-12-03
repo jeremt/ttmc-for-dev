@@ -292,16 +292,16 @@
             "theme": "Testeur d'api",
             "category": "dev-tools",
             "questions": [
-                "Quel est le testeur d'api le plus connu ?",
-                "A quoi ça sert ? ",
-                "Il est possible de faire des test avec \"un Testeur d'api ?\"",
-                "Peut ont crée un environnement dans un testeur d'api ? Et à quoi ça nous sert ?",
-                "Avec un click j'ai fait tout mes test c'est possible ? "
+                "Donne moi le nom d'un testeur d'api?",
+                "A quoi ça sert un testeur d'api ? ",
+                "Si je fais une requête sur https://www.google.com/ ça fonctionne ?",
+                "Peut-on créer un environnement dans un testeur d'api ? Et à quoi ça nous sert ?",
+                "Dans le cas ou j'ai plusieurs tests c'est possible de les lancer tous en même temps ? "
             ],
             "answers": [
-                "Postman.",
-                "Faire des requettes http sans coder.",
-                "Oui dans la plupart du temps.",
+                "Postman, Bruno ...",
+                "Faire des requettes http sans coder et vérifier que t'es routes fonctionne bien.",
+                "Oui, à partir du moment ou la requête est autorisée le logiciel peu le gèrer",
                 "Oui, pour pouvoir tester sur d'autres machine sans avoir de contrainte.",
                 "Oui, pour ça j'ai crée un scénario de test ou j'ai déjà préalablement fait tous mes tests."
             ]
