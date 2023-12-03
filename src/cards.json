@@ -287,6 +287,24 @@
                 "Intégrez une vidéo avec contrôles via `<video controls><source src=\"video.mp4\" type=\"video/mp4\"></video>`",
                 "Utilisez l'attribut `data-*` (par exemple, `data-info=\"valeur\"`)"
             ]
+        },
+        {
+            "theme": "Testeur d'api",
+            "category": "dev-tools",
+            "questions": [
+                "Donne moi le nom d'un testeur d'api?",
+                "A quoi ça sert un testeur d'api ? ",
+                "Si je fais une requête sur https://www.google.com/ ça fonctionne ?",
+                "Peut-on créer un environnement dans un testeur d'api ? Et à quoi ça nous sert ?",
+                "Dans le cas ou j'ai plusieurs tests c'est possible de les lancer tous en même temps ? "
+            ],
+            "answers": [
+                "Postman, Bruno ...",
+                "Faire des requettes http sans coder et vérifier que t'es routes fonctionne bien.",
+                "Oui, à partir du moment ou la requête est autorisée le logiciel peu le gèrer",
+                "Oui, pour pouvoir tester sur d'autres machine sans avoir de contrainte.",
+                "Oui, pour ça j'ai crée un scénario de test ou j'ai déjà préalablement fait tous mes tests."
+            ]
         }
     ]
 }
