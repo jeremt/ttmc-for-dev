@@ -305,6 +305,24 @@
                 "Oui, pour pouvoir tester sur d'autres machine sans avoir de contrainte.",
                 "Oui, pour ça j'ai crée un scénario de test ou j'ai déjà préalablement fait tous mes tests."
             ]
+        },
+        {
+            "theme": "Complexité algorithmique",
+            "category": "algo-paradigms",
+            "questions": [
+                "A quoi sert la complexité d'un algo ?",
+                "Quels sont les 2 cas extrèmes pour lesquels on calcul la complexité ?",
+                "Si j'ai une boucle qui itère n fois, de combien sera la complexité de l'algo ?",
+                "Quelle notation utilise-t-on pour parler d'une complexité linéaire dans le pire des cas ?",
+                "Parmi les algo de tri classiques, quelle est la complexité dans le pire des cas la plus faible ?"
+            ],
+            "answers": [
+                "Mesurer la quantité de ressources (temps, espaces mémoire) que l'algo utilise dans différents cas",
+                "Dans le pire des cas et dans le meilleur",
+                "La complexité sera de n, quel que soit le cas",
+                "On utilise O(n) (grand O de n). C'est une notation mathématiques, utiliser pour de la comparaison asymptotique",
+                "C'est n*log(n). Algo de tri fusion et par tas, par exemple"
+            ]
         }
     ]
 }
