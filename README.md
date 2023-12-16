@@ -2,11 +2,11 @@
 
 Sorry but this is in french 🥖 😅
 
-Ce jeu de société inspiré de TTMC, "tu te mets combien" a pour but d'aider à developper sa culture dev tout en s'amusant.
+Ce jeu de société inspiré de TTMC, "tu te mets combien" a pour but d'aider à développer sa culture dev tout en s'amusant.
 
 ## Tester le projet en local
 
-1. Lance ses commandes dans ton terminal :
+1. Lance ces commandes dans ton terminal :
 
 ```sh
 pnpm install # ou npm
@@ -19,7 +19,7 @@ _Le projet utilise vite pour se lancer mais il est écrit en Vanilla JavaScript 
 
 ## Pourquoi ?
 
-Lorsqu'on devient developpeur il y a énormément de vocabulaire, nouvelles notions et concepts à assimiler ce qui peut vite devenir compliquer à gérer. En plus, ce n'est pas toujours amusant d'emmagasiner toute cette théorie.
+Lorsqu'on devient développeur il y a énormément de vocabulaire, nouvelles notions et concepts à assimiler ce qui peut vite devenir compliquer à gérer. En plus, ce n'est pas toujours amusant d'emmagasiner toute cette théorie.
 
 Malhereusement, c'est le genre de choses qu'on va souvent retrouver en entretien tech 😬 C'est pourquoi j'ai voulu créer ce jeu. Pour pouvoir découvrir les choses petit à petit et améliorer sa culture tech sans trop se prendre la tête 🥴
 
@@ -36,7 +36,7 @@ Il existe 4 catégories de questions :
 
 ### Tu as des idées mais tu n'as pas forcément la réponse ou tu ne sais pas comment les formuler ?
 
-J'ajoute les dans une issue sur le répo !
+Ajoute les dans une issue sur le répo !
 
 ### Tu as répéré une erreur / amélioration potentielle dans une carte existante ?
 
@@ -50,10 +50,10 @@ Tu peux forker le repo, rajouter ta carte dans `src/cards.json`, puis soumettre 
 
 Chaque carte doit contenir :
 
--   un theme `theme`, de maximum 60 caractères
--   une categorie `category` parmis `"dev-front"`, `"dev-back"`, `"dev-tools"` et `"algo-paradigms"`
+-   un thème `theme`, de maximum 60 caractères
+-   une catégorie `category` parmi `"dev-front"`, `"dev-back"`, `"dev-tools"` et `"algo-paradigms"`
 -   un tableau de questions `questions`, chaque question doit faire maximum 120 caractères
--   un tableau de réponses `answers`, chaque question doit faire maximum 120 caractères
+-   un tableau de réponses `answers`, chaque réponse doit faire maximum 120 caractères
 
 Attention, les questions doivent être de plus en plus dures !
 
@@ -61,13 +61,13 @@ Par exemple le json :
 
 ```json
 {
-    "theme": "Déclaration de Variables",
+    "theme": "Déclaration de Variables JS",
     "category": "dev-front",
     "questions": [
         "Quel mot clé entre `let`, `var`, et `if` ne permet pas de déclarer une variable ?",
-        "Quel est le mot clé est utilisé pour déclarer une variable dont la valeur ne doit pas changer ?",
+        "Quel est le mot clé utilisé pour déclarer une variable dont la valeur ne doit pas changer ?",
         "Est-ce qu'une variable peut changer de type après sa déclaration ?",
-        "Comment appelle t'on la syntaxe qui permet de déclarer plusieurs variable à partir des champs d'un object ?",
+        "Comment appelle-t-on la syntaxe qui permet de déclarer plusieurs variables à partir des champs d'un object ?",
         "Qu'est-ce que le hoisting et quel mot clé permet de hoister une variable ?"
     ],
     "answers": [
@@ -75,7 +75,7 @@ Par exemple le json :
         "`const`",
         "Oui. JS est un langage au typage dynamique, ce qui fait que le type d'une variable peut changer n'importe quand.",
         "On appelle cette syntaxe la destructuration. Par exemple: `const {name, age} = person;`",
-        "Le hoisting permet d'accéder à une variable avant sa déclaration. On utilise le mot clé var pour hoister une variable."
+        "Le hoisting permet d'accéder à une variable avant sa déclaration. On utilise le mot clé `var` pour hoister une variable."
     ]
 }
 ```
