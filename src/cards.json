@@ -311,7 +311,7 @@
             "category": "algo-paradigms",
             "questions": [
                 "A quoi sert la complexité d'un algo ?",
-                "Quels sont les 2 cas extrèmes pour lesquels on calcul la complexité ?",
+                "Quels sont les 2 cas extrêmes pour lesquels on calcule la complexité ?",
                 "Si j'ai une boucle qui itère n fois, de combien sera la complexité de l'algo ?",
                 "Quelle notation utilise-t-on pour parler d'une complexité linéaire dans le pire des cas ?",
                 "Parmi les algo de tri classiques, quelle est la complexité dans le pire des cas la plus faible ?"
