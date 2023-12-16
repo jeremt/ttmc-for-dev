@@ -5,35 +5,35 @@
             "category": "dev-front",
             "questions": [
                 "Quel mot clé entre `let`, `var`, et `if` ne permet pas de déclarer une variable ?",
-                "Quel est le mot clé est utilisé pour déclarer une variable dont la valeur ne doit pas changer ?",
+                "Quel est le mot clé utilisé pour déclarer une variable dont la valeur ne doit pas changer ?",
                 "Est-ce qu'une variable peut changer de type après sa déclaration ?",
-                "Comment appelle t'on la syntaxe qui permet de déclarer plusieurs variable à partir des champs d'un object ?",
+                "Comment appelle-t-on la syntaxe qui permet de déclarer plusieurs variables à partir des champs d'un object ?",
                 "Qu'est-ce que le hoisting et quel mot clé permet de hoister une variable ?"
             ],
             "answers": [
                 "`if`, c'est pour les conditions !",
                 "`const`",
                 "Oui. JS est un langage au typage dynamique, ce qui fait que le type d'une variable peut changer n'importe quand.",
-                "On appelle cette syntaxe la destructuration. Par exemple: `const {name, age} = person;`",
-                "Le hoisting permet d'accéder à une variable avant sa déclaration. On utilise le mot clé var pour hoister une variable."
+                "On appelle cette syntaxe la destructuration. Par exemple: `const {name, age} = person;`.",
+                "Le hoisting permet d'accéder à une variable avant sa déclaration. On utilise le mot clé `var` pour hoister une variable."
             ]
         },
         {
             "theme": "HTML",
             "category": "dev-front",
             "questions": [
-                "Quelle balise afficher une image ?",
-                "Quelle sont les 2 balises qu'on utilise lorsqu'on ne veut pas de sémantique en particulier ?",
-                "Quel attribut utilise t'on pour ouvrir un lien dans un nouvel onglet ?",
-                "Quel attribut permet d'attendre que le HTML soit entièrement chargé avant d'executer le contenu d'une balise script ?",
-                "Quel préfixe d'attribut utilise-t-on généralement pour ajouter des informations d'accessibilité à une balise ? (+1 case si tu détailles d'acronyme)"
+                "Quelle balise permet d'afficher une image ?",
+                "Quelles sont les 2 balises que l'on utilise lorsqu'on ne veut pas de sémantique en particulier ?",
+                "Quel attribut utilise-t-on pour ouvrir un lien dans un nouvel onglet ?",
+                "Quel attribut permet d'attendre que le HTML soit entièrement chargé avant d'exécuter le contenu d'une balise script ?",
+                "Quel préfixe d'attribut utilise-t-on généralement pour ajouter des informations d'accessibilité à une balise ? (+1 case si tu détailles l'acronyme)"
             ],
             "answers": [
-                "Il s'agit de la balise `<img />`",
-                "On utilise les balises `<div>` et `<span>`",
-                "On utilise l'attribut `target=\"_blank\"`",
-                "L'attribut `defer`, exemple : `<script defer src=\"index.js\"></script>`",
-                "Le prefix `aria-` qui signifie Accessible Rich Internet Applications"
+                "Il s'agit de la balise `<img />`.",
+                "On utilise les balises `<div>` et `<span>`.",
+                "On utilise l'attribut `target=\"_blank\"`.",
+                "L'attribut `defer`, exemple : `<script defer src=\"index.js\"></script>`.",
+                "Le prefix `aria-` qui signifie Accessible Rich Internet Applications."
             ]
         },
         {
@@ -58,7 +58,7 @@
             "theme": "React Hooks",
             "category": "dev-front",
             "questions": [
-                "Vrai ou faux ? Le capitaine crochet est l'ennemi juré de Peter Pan.",
+                "Vrai ou faux ? Le capitaine Crochet est l'ennemi juré de Peter Pan.",
                 "Par quel mot commence le nom des fonctions de type hook ?",
                 "Quel hook permet de récupérer une valeur dans un sous composant sans passer par les props ?",
                 "Pourquoi `useMemo()` retourne une fonction et pas directement une valeur ?",
@@ -66,10 +66,10 @@
             ],
             "answers": [
                 "Vrai, même si j'avoue ça n'a pas grand chose à voir.",
-                "Elle commencent toujours par `use`. `useState()` ou `useEffect()` par exemple.",
+                "Elles commencent toujours par `use`. `useState()` ou `useEffect()` par exemple.",
                 "`useContext()`",
                 "Car la valeur doit pouvoir être recalculée en fonction des dépendances.",
-                "Il sert à memoifier une fonction pour éviter de la créer et donc déclencher un rendu des composants enfant qui l'utilisent."
+                "Il sert à memoifier une fonction pour éviter de la créer et donc déclencher un rendu des composants enfants qui l'utilisent."
             ]
         },
         {
@@ -103,9 +103,9 @@
             "answers": [
                 "Hyper Text Transfer Protocol, même si j'aurais préféré l'autre 🤷",
                 "`DELETE`",
-                "PUT remplace la resource alors que PATCH fait une mise à jour partielle.",
+                "PUT remplace la ressource alors que PATCH fait une mise à jour partielle.",
                 "403 Forbidden est le status HTTP utilisé lorsque la requête est comprise mais pas autorisée par le serveur.",
-                "Par défaut , un cookie expire à la fin de la session utilisateur. Sinon on peut utiliser Max-Age ou Expires pour le spécifier."
+                "Par défaut, un cookie expire à la fin de la session utilisateur. Sinon on peut utiliser Max-Age ou Expires pour le spécifier."
             ]
         },
         {
@@ -121,7 +121,7 @@
             "answers": [
                 "Structured Query Language",
                 "On utilise `WHERE`. Exemple : `SELECT * FROM a WHERE a.id = ?`",
-                "`INNER JOIN` retourne l'intersection des 2 tables, `LEFT JOIN` retourne les lignes de la 1er table + l'intersection (autres réponses valides acceptées).",
+                "`INNER JOIN` retourne l'intersection des 2 tables, `LEFT JOIN` retourne les lignes de la 1ère table + l'intersection (autres réponses valides acceptées).",
                 "`PRIMARY KEY` correspond à l'id de la table, `FOREIGN KEY` réference une autre table.",
                 "Ajouter des régles de sécurité sur la db."
             ]
@@ -140,7 +140,7 @@
                 "Elle permet d'envoyer ses commits en local sur la remote (github par exemple).",
                 "`git log`",
                 "C'est Linus Torwald qui a inventé GIT en 2005.",
-                "On utilise le mot clé squash ou fixup. Fixup garde uniquement le dernier message et squash les gardent tous.",
+                "On utilise le mot clé `squash` ou `fixup`. `Fixup` garde uniquement le dernier message et `squash` les gardent tous.",
                 "Elle permet d'appliquer le code d'un commit précis à notre état courant."
             ]
         },
@@ -155,7 +155,7 @@
                 "Comment faire pour changer le nombre d'espaces utilisés pour une tab dans le code ? (passer de 2 à 4 par exemple)"
             ],
             "answers": [
-                "Visual studio code",
+                "Visual Studio Code",
                 "⌘+P sur Mac ou control+P sur Windows",
                 "Oui tout à fait ! C'est assez pratique d'ailleurs 😉",
                 "Il s'agit de la touche alt (⌥)",
@@ -166,11 +166,11 @@
             "theme": "Commandes shell",
             "category": "dev-tools",
             "questions": [
-                "La commande `cd` permet de changer de dossier ou d'écouter un CD ?",
+                "La commande `cd` permet-elle de changer de dossier ou d'écouter un CD ?",
                 "Quelle option de `ls` permet d'afficher les fichiers cachés (dot files)",
-                "Quel symbol utilise-t-on devant une variable pour accéder à sa valeur ?",
+                "Quel symbole utilise-t-on devant une variable pour accéder à sa valeur ?",
                 "Comment ajoute-on les droits d'écriture sur un fichier ?",
-                "Comment fait-on pour executer une commande en background en évitant qu'elle affiche des messages ?"
+                "Comment fait-on pour exécuter une commande en background en évitant qu'elle affiche des messages ?"
             ],
             "answers": [
                 "cd (change directory), permet de changer de dossier.",
@@ -193,7 +193,7 @@
             "answers": [
                 "3 évidemment ! Et non, il n'y a pas de piège 😅",
                 "Comme dans beaucoup de langages, on utilise les crochets : `[]`.",
-                "Les deux ajoutent les éléments par le haut mais la pile les retire par le bas alors que la stack les retire par le haut.",
+                "Les deux ajoutent les éléments par le haut mais la queue les retire par le bas alors que la stack les retire par le haut.",
                 "C'est la liste chaînée car dans le cas d'un tableau on doit le recréer entièrement à chaque insertion.",
                 "`O(log(n))`, même chose pour l'accès et la suppression."
             ]
@@ -212,7 +212,7 @@
                 "On utilise les chiffres 1 et 0.",
                 "Un octet est un ensemble de 8 bits. `10010011` est un octet.",
                 "42",
-                "Ils effectuent des opérations binaires, ans le même ordre : XOR, OR, AND et NOT.",
+                "Ils effectuent des opérations binaires, dans le même ordre : XOR, OR, AND et NOT.",
                 "`const green = (color >> 8) & 0xFF`"
             ]
         },
@@ -223,7 +223,7 @@
                 "Le design pattern Factory sert à créer des objets ou recycler des chaussures ?",
                 "À quoi sert un Singleton ?",
                 "Comment fonctionne le design pattern Observer ?",
-                "Explique la différence les patterns de création (creational patterns) et de structure (structural patterns).",
+                "Explique la différence entre les patterns de création (creational patterns) et de structure (structural patterns).",
                 "Comment faire pour implementer le design pattern Iterator en JavaScript ?"
             ],
             "answers": [
@@ -238,7 +238,7 @@
             "theme": "Requête HTTP",
             "category": "dev-back",
             "questions": [
-                "Une url HTTP commence t'elle par `http://` ou `html://` ?",
+                "Une url HTTP commence-t-elle par `http://` ou `html://` ?",
                 "Laquelle de ses méthodes n'existe pas en HTTP : `GET`, `POST`, `PASTE`, `DELETE` ?",
                 "Comment appelle-t-on la partie de la requête permettant de passer des données ?",
                 "À quoi servent les cookies ? 🍪",
@@ -258,7 +258,7 @@
             "questions": [
                 "Quel mot clé utilise t'on pour déclarer une fonction ?",
                 "À quoi sert l'opérator `:=` ?",
-                "Quel opérateur utilise-t-on pour deréférencer un pointer ?",
+                "Quel opérateur utilise-t-on pour déréférencer un pointer ?",
                 "Quelle est la différence entre `array` et `slice` ?",
                 "Comment partage-t-on des données à travers plusieurs goroutines ?"
             ],
@@ -266,7 +266,7 @@
                 "Le mot clé `func`.",
                 "Il permet de déclarer une variable avec une valeur en inférant son type automatiquement.",
                 "On utilise `*` comme en C.",
-                "Contrairement à aux arrays, les slices peuvent avoir une taille qui change dynamiquement.",
+                "Contrairement aux arrays, les slices peuvent avoir une taille qui change dynamiquement.",
                 "On utilise les channels, déclarés avec le mot clé `chan`."
             ]
         },
@@ -294,16 +294,16 @@
             "questions": [
                 "Donne moi le nom d'un testeur d'api?",
                 "A quoi ça sert un testeur d'api ? ",
-                "Si je fais une requête sur https://www.google.com/ ça fonctionne ?",
+                "Si je fais une requête sur `https://www.google.com/`, ça fonctionne ?",
                 "Peut-on créer un environnement dans un testeur d'api ? Et à quoi ça nous sert ?",
-                "Dans le cas ou j'ai plusieurs tests c'est possible de les lancer tous en même temps ? "
+                "Dans le cas où j'ai plusieurs tests, c'est possible de les lancer tous en même temps ? "
             ],
             "answers": [
-                "Postman, Bruno ...",
-                "Faire des requettes http sans coder et vérifier que t'es routes fonctionne bien.",
-                "Oui, à partir du moment ou la requête est autorisée le logiciel peu le gèrer",
-                "Oui, pour pouvoir tester sur d'autres machine sans avoir de contrainte.",
-                "Oui, pour ça j'ai crée un scénario de test ou j'ai déjà préalablement fait tous mes tests."
+                "Postman, Bruno, ...",
+                "Faire des requettes http sans coder et vérifier que tes routes fonctionnent bien.",
+                "Oui, à partir du moment où la requête est autorisée, le logiciel peu la gérer",
+                "Oui, pour pouvoir tester sur d'autres machines sans avoir de contraintes.",
+                "Oui, pour ça j'ai créé un scénario de test ou j'ai déjà préalablement fait tout mes tests."
             ]
         }
     ]
