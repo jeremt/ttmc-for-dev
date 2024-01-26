@@ -87,7 +87,7 @@
                 "Non car TypeScript peut l'inférer automatiquement.",
                 "`type Status = 'success' | 'error';`",
                 "`as` force la conversion alors que `satisfies` vérifie si la valeur et le type sont compatibles.",
-                "Il s'agit d'un 'mapped type'. Il supprime du type ses attributs de type `number`."
+                "Il s'agit d'un 'mapped type', il filtre les clés de type number `{0: 1, a: 2}` devient `{a: 2}`."
             ]
         },
         {
