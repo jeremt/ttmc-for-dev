@@ -19,6 +19,24 @@
             ]
         },
         {
+            "theme": "Tableaux et méthodes de tableaux JS",
+            "category": "dev-front",
+            "questions": [
+                "Quel est la paire de symboles pouvant représenter un tableau: `[]`, `{}` ou `()` ?",
+                "Peut-on modifier le contenu d'un tableau déclaré avec le mot clé `const` ?",
+                "Les tableaux sont-ils implementés de la même manière que dans la pluspart des languages ?",
+                "`Array(1) === [undefined] && Array(1)[0] === undefined`, `true` ou `false` ?",
+                "Qu'est-ce que le hoisting et quel mot clé permet de hoister une variable ?"
+            ],
+            "answers": [
+                "`[]`, les crochets représentent un objet et les parenthèses ne sont jamais utilisées pour représenter une valeur.",
+                "Oui, car la variable initialisée contient un pointeur (une référence), pas le tableau en lui même.",
+                "Non, en général on appelle `tableau` une plage d'adresses mémoire dont la taille est fixe.",
+                "False! Les éléments vides ne sont pas explicitement indéfinis, mais tenter d'y accéder renvoie `undefined`.",
+                "Le hoisting permet d'accéder à une variable avant sa déclaration. On utilise le mot clé `var` pour hoister une variable."
+            ]
+        },
+        {
             "theme": "HTML",
             "category": "dev-front",
             "questions": [
