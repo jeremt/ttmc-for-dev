@@ -19,7 +19,7 @@
             ]
         },
         {
-            "theme": "Tableaux et méthodes de tableaux JS",
+            "theme": "Tableaux en Javascript",
             "category": "dev-front",
             "questions": [
                 "Quel est la paire de symboles pouvant représenter un tableau: `[]`, `{}` ou `()` ?",
@@ -55,7 +55,7 @@
             ]
         },
         {
-            "theme": "formulaires HTML",
+            "theme": "Formulaires HTML",
             "category": "dev-front",
             "questions": [
                 "Quel élément doit être associé à un `<input>` pour des questions d'accessibilité et de validité du formulaire ?",
@@ -163,6 +163,24 @@
             ]
         },
         {
+            "theme": "Structures de données en Python",
+            "category": "dev-back",
+            "questions": [
+                "A quelle structure de données correspond la notation entre crochets ?",
+                "Laquelle de ces structures de données n'existe pas par défaut: `map`, `array` ou `dict` ?",
+                "Quelle est la différence entre `sorted(list)` et `list.sort()` ?",
+                "A quoi peut servir la méthode `dict.items()` ?",
+                "L'expression `def function(): return 1, 2, 3, 4; a, b, c, d = function();` est valide, pourquoi ?"
+            ],
+            "answers": [
+                "`list`, similaire aux tableaux en Javascript.",
+                "`array`, corresponsant aux tableaux au sens classique. Ils sont disponibles dans la librairie NumPy.",
+                "`sorted()` renvoie une copie triée de la liste, alors que `list.sort()` modifie directement la liste existante.",
+                "Elle renvoie une liste comprenant les paires clé/valeur du dictionnaire, ce qui permet d'itérer dessus.",
+                "La fonction retourne implicitement un `tuple`, un itérable qui peut être automatiquement assigné à des variables."
+            ]
+        },
+        {
             "theme": "Requêtes SQL",
             "category": "dev-back",
             "questions": [
@@ -199,19 +217,19 @@
             ]
         },
         {
-            "theme": "Interface en ligne de commande Linux",
+            "theme": "Commandes shell #2",
             "category": "dev-tools",
             "questions": [
-                "Comment s'appelle l'utilitaire de ligne de commande le plus populaire sur Linux ?",
-                "La commande `touch` sert originellement à dater un fichier, mais elle permet aussi de... ?",
-                "Quel symbole sert à préciser une option de commande ?",
+                "Comment s'appelle l'utilitaire de ligne de commande le plus populaire sur Linux, `Bash` ou `Cash` ?",
+                "La commande `touch` sert à dater un fichier, mais elle permet aussi de... ?",
+                "Parmi les commandes `rn`, `rename` et `mv`, lesquelles permettent de renommer un fichier ?",
                 "Quelle commande permet d'effectuer des recherches très précises dans les fichiers et dossiers ?",
                 "Que signifie chaque chiffre dans la commande `chmod 750` ?"
             ],
             "answers": [
-                "La commande `cd` suivie des noms de dossiers, séparés par des barres obliques ",
-                "De créer un fichier s'il n'existe pas mais d'éviter de l'écraser s'il existe déjà, contrairement à `make`.",
-                "En principe, un tiret simple pour la forme abrégée et un tiret double pour la forme longue, mais la convention n'est pas stricte.",
+                "Bash, pour Bourne-Again SHell. Bash est à la fois un utilitaire (un `shell`) et un language de programmation.",
+                "Créer un fichier s'il n'existe pas tout en évitant l'écraser s'il existe déjà, contrairement à `make`.",
+                "Par défaut seul `mv` est disponible sur toutes les distributions Linux, mais certaines disposent de `rename`.",
                 "La commande `grep`, qui compare les chaines de caractères présentes dans les données avec un schéma fourni.",
                 "Le 7 signifie `propriétaires: tous les droits`, le 5 `groupes: lire/exécuter` et le 0 `autres: aucun droit`."
             ]
