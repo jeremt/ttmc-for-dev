@@ -167,16 +167,16 @@
             "category": "dev-back",
             "questions": [
                 "A quelle structure de données correspond la notation entre crochets ?",
-                "Laquelle de ces structures de données n'existe pas par défaut: `map`, `array` ou `dict` ?",
+                "Laquelle de ces structures de données n'existe pas par défaut: `set`, `array` ou `dict` ?",
                 "Quelle est la différence entre `sorted(list)` et `list.sort()` ?",
-                "A quoi peut servir la méthode `dict.items()` ?",
+                "Pourquoi utiliser `dict.items()` plutot que `list(dict)` ?",
                 "L'expression `def function(): return 1, 2, 3, 4; a, b, c, d = function();` est valide, pourquoi ?"
             ],
             "answers": [
                 "`list`, similaire aux tableaux en Javascript.",
                 "`array`, corresponsant aux tableaux au sens classique. Ils sont disponibles dans la librairie NumPy.",
                 "`sorted()` renvoie une copie triée de la liste, alors que `list.sort()` modifie directement la liste existante.",
-                "Elle renvoie une liste comprenant les paires clé/valeur du dictionnaire, ce qui permet d'itérer dessus.",
+                "`dict.items()` permet d'itérer sur le dictionnaire en accédant aux clés et aux valeurs, `list(dict)` ne comprends que les clés.",
                 "La fonction retourne implicitement un `tuple`, un itérable qui peut être automatiquement assigné à des variables."
             ]
         },
