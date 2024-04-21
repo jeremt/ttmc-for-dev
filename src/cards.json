@@ -1,4 +1,5 @@
 {
+    "$schema": "./schema.json",
     "cards": [
         {
             "theme": "Déclaration de Variables JS",
