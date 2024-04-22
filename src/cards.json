@@ -145,6 +145,42 @@
             ]
         },
         {
+            "theme": "Classes en Python",
+            "category": "dev-back",
+            "questions": [
+                "Quelle convention applique-t-on aux noms de classes, `snake_case`, `PascalCase` ou `KantCase` ?",
+                "Quel mot-clé fait référence à un attribut d'instance, `self` ou `this` ?",
+                "Quelle alternative à l'initialisation `()` peut-on utiliser pour créer une instance de classe ?",
+                "Peut-on accéder directement à un attribut d'instance définit par un nom commençant par un tiret bas ?",
+                "Comment créer une propriété calculée ?"
+            ],
+            "answers": [
+                "`PascalCase`, en référence au language Pascal, qui doit son nom au philosophe et mathématicien Blaise Pascal. ",
+                "`self`, `this` est l'équivalent en Javascript.",
+                "On peut définir une méthode de classe qui renvoie une instance, on parle alors de `factory method` (méthode usine).",
+                "Oui, les attributs privés n'existent pas réellement en Python.",
+                "On utilise le décorateur `@property` pour définir une méthode à laquelle on peut accéder avec la syntaxe `class.property`."
+            ]
+        },
+        {
+            "theme": "Structures de données en Python",
+            "category": "dev-back",
+            "questions": [
+                "A quelle structure de données correspond la notation entre crochets ?",
+                "Laquelle de ces structures de données n'existe pas par défaut: `set`, `array` ou `dict` ?",
+                "Quelle est la différence entre `sorted(list)` et `list.sort()` ?",
+                "Pourquoi utiliser `dict.items()` plutot que `list(dict)` ?",
+                "L'expression `def function(): return 1, 2, 3, 4` -> `a, b, c, d = function();` est valide, pourquoi ?"
+            ],
+            "answers": [
+                "`list`, similaire aux tableaux en Javascript.",
+                "`array`, correspondant aux tableaux au sens classique. Ils sont disponibles dans la librairie NumPy.",
+                "`sorted()` renvoie une copie triée de la liste, alors que `list.sort()` modifie directement la liste existante.",
+                "`dict.items()` permet d'itérer sur le dictionnaire en accédant aux clés et aux valeurs, `list(dict)` ne comprends que les clés.",
+                "La fonction retourne implicitement un `tuple` et assigne automatiquement les entrées aux variables."
+            ]
+        },
+        {
             "theme": "Requêtes SQL",
             "category": "dev-back",
             "questions": [
