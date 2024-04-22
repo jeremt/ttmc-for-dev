@@ -19,6 +19,24 @@
             ]
         },
         {
+            "theme": "Tableaux en Javascript",
+            "category": "dev-front",
+            "questions": [
+                "Comment accéde-t-on au dernier élément d'un tableau en JS ? (+ 1 si tu connais deux méthodes)",
+                "Peut-on modifier le contenu d'un tableau déclaré avec le mot-clé `const` ?",
+                "Les tableaux sont-ils implementés de la même manière que dans la plupart des languages ?",
+                "`Array(1) === [undefined] && Array(1)[0] === undefined`, ça revoie `true` ou `false` ?",
+                "Quel serait le résultat de [1,`80`, 9, `16`].sort() ?"
+            ],
+            "answers": [
+                "`arr[length - 1]` ou `arr.findLast(el => el)`",
+                "Oui, car la variable fait réference au tableau pas à son contenu et cette réference ne change pas.",
+                "Non, en général un tableau correspond à une plage d'adresses mémoire dont la taille est fixe.",
+                "False! Les éléments vides ne sont pas explicitement indéfinis, mais tenter d'y accéder renvoie `undefined`.",
+                "[1, `16`, `80`, 9], car par défaut, Array.sort() converti les éléments en chaînes de caractères et compare leur valeur Unicode."
+            ]
+        },
+        {
             "theme": "HTML",
             "category": "dev-front",
             "questions": [
