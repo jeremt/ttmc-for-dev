@@ -1,418 +1,418 @@
 {
-    "cards": [
-        {
-            "theme": "Déclaration de Variables JS",
-            "category": "dev-front",
-            "questions": [
-                "Quel mot clé entre `let`, `var`, et `if` ne permet pas de déclarer une variable ?",
-                "Quel est le mot clé utilisé pour déclarer une variable dont la valeur ne doit pas changer ?",
-                "Est-ce qu'une variable peut changer de type après sa déclaration ?",
-                "Comment appelle-t-on la syntaxe qui permet de déclarer plusieurs variables à partir des champs d'un object ?",
-                "Qu'est-ce que le hoisting et quel mot clé permet de hoister une variable ?"
-            ],
-            "answers": [
-                "`if`, c'est pour les conditions !",
-                "`const`",
-                "Oui. JS est un langage au typage dynamique, ce qui fait que le type d'une variable peut changer n'importe quand.",
-                "On appelle cette syntaxe la destructuration. Par exemple: `const {name, age} = person;`.",
-                "Le hoisting permet d'accéder à une variable avant sa déclaration. On utilise le mot clé `var` pour hoister une variable."
-            ]
-        },
-        {
-            "theme": "Tableaux en Javascript",
-            "category": "dev-front",
-            "questions": [
-                "Quel est la paire de symboles pouvant représenter un tableau: `[]`, `{}` ou `()` ?",
-                "Peut-on modifier le contenu d'un tableau déclaré avec le mot clé `const` ?",
-                "Les tableaux sont-ils implementés de la même manière que dans la pluspart des languages ?",
-                "`Array(1) === [undefined] && Array(1)[0] === undefined`, `true` ou `false` ?",
-                "Quel serait le résultat de [1,`80`,9,`16`].sort() ?"
-            ],
-            "answers": [
-                "`[]`, les crochets représentent un objet et les parenthèses ne sont jamais utilisées pour représenter une valeur.",
-                "Oui, car la variable initialisée contient un pointeur (une référence), pas le tableau en lui même.",
-                "Non, en général on appelle `tableau` une plage d'adresses mémoire dont la taille est fixe.",
-                "False! Les éléments vides ne sont pas explicitement indéfinis, mais tenter d'y accéder renvoie `undefined`.",
-                "[1, `16`, `80`, 9], car par défaut, Array.sort() converti les éléments en chaine de charactère et compare leur valeur Unicode."
-            ]
-        },
-        {
-            "theme": "HTML",
-            "category": "dev-front",
-            "questions": [
-                "Quelle balise permet d'afficher une image ?",
-                "Quelles sont les 2 balises que l'on utilise lorsqu'on ne veut pas de sémantique en particulier ?",
-                "Quel attribut utilise-t-on pour ouvrir un lien dans un nouvel onglet ?",
-                "Quel attribut permet d'attendre que le HTML soit entièrement chargé avant d'exécuter le contenu d'une balise script ?",
-                "Quel préfixe d'attribut utilise-t-on généralement pour ajouter des informations d'accessibilité à une balise ? (+1 case si tu détailles l'acronyme)"
-            ],
-            "answers": [
-                "Il s'agit de la balise `<img />`.",
-                "On utilise les balises `<div>` et `<span>`.",
-                "On utilise l'attribut `target=\"_blank\"`.",
-                "L'attribut `defer`, exemple : `<script defer src=\"index.js\"></script>`.",
-                "Le prefix `aria-` qui signifie Accessible Rich Internet Applications."
-            ]
-        },
-        {
-            "theme": "Formulaires HTML",
-            "category": "dev-front",
-            "questions": [
-                "Quel élément doit être associé à un `<input>` pour des questions d'accessibilité et de validité du formulaire ?",
-                "Quel élément utilise-t-on pour créer un champs de texte dans un formulaire, `<input type='text'>` ou `<input type='field'> ?`",
-                "Quel paire d'éléments permet de créer une sous-section dans un formulaire et d'y ajouter des instructions ou des précisions ?",
-                "Comment faire pour permettre aux utilisateurs d'envoyer un selfie via un formulaire ?",
-                "Quel valeur autre que `get` et `post` peut on donner à l'attribut `action` d'un formulaire ?"
-            ],
-            "answers": [
-                "Il faut toujours associer un élément `<label>` à un champ de formulaire.",
-                "On utilise `type='text'`, mais `type='field'` fonctionne tout de même car l'attribut type par défaut est `text` et `field` n'existe pas.",
-                "On délimite un groupe de champs avec `<fieldset>`, auquel on associera l'élément `<legend>`.",
-                "On ajoute à un <input type='file'> l'attribut `capture='user'`.",
-                "La valeur `dialog`, qui permet de fermer une boite de dialogue (`<dialog>`) dans laquelle le formulaire est contenu."
-            ]
-        },
-        {
-            "theme": "Framework JS",
-            "category": "dev-front",
-            "questions": [
-                "Peux-tu citer tous les frameworks JS créés depuis 2007 ?",
-                "À quoi sert Express JS ?",
-                "Quelle est la différence entre React et Next ?",
-                "Dans quel ordre sont sortis les frameworks Vue, Svelte et React ?",
-                "Quelle est la différence fondamentale entre le modèle de Reactivité de Solid et React ?"
-            ],
-            "answers": [
-                "Que tu répondes oui ou non, tu as répondu à la question, bien joué !",
-                "Il permet de créer des backends et des APIs en Node JS.",
-                "Next est une surcouche de React permettant de genérer des components côté serveur.",
-                "React, Vue puis Svelte",
-                "React s'appuie sur le virtual DOM alors que Solid met à jour le DOM directement."
-            ]
-        },
-        {
-            "theme": "React Hooks",
-            "category": "dev-front",
-            "questions": [
-                "Vrai ou faux ? Le capitaine Crochet est l'ennemi juré de Peter Pan.",
-                "Par quel mot commence le nom des fonctions de type hook ?",
-                "Quel hook permet de récupérer une valeur dans un sous composant sans passer par les props ?",
-                "Pourquoi `useMemo()` retourne une fonction et pas directement une valeur ?",
-                "À quoi sert le hook `useCallback() ?`"
-            ],
-            "answers": [
-                "Vrai, même si j'avoue ça n'a pas grand chose à voir.",
-                "Elles commencent toujours par `use`. `useState()` ou `useEffect()` par exemple.",
-                "`useContext()`",
-                "Car la valeur doit pouvoir être recalculée en fonction des dépendances.",
-                "Il sert à memoifier une fonction pour éviter de la créer et donc déclencher un rendu des composants enfants qui l'utilisent."
-            ]
-        },
-        {
-            "theme": "TypeScript",
-            "category": "dev-front",
-            "questions": [
-                "TypeScript permet de rajouter à JavaScript des types ou des emojis ?",
-                "Dans le code `const n: number = 10;` le type est-il obligatoire ?",
-                "Une variable de type `Status` peut être égale à `'success'` ou `'error'`. À quoi ressemble le type `Status` ?",
-                "Quelle est la différence entre `as` et `satisfies` ?",
-                "`type A<T> = {[K in keyof T as K extends number ? never : K]: T[K];};` que fait ce type ?"
-            ],
-            "answers": [
-                "Des emojis ! (nan j'rigole)",
-                "Non car TypeScript peut l'inférer automatiquement.",
-                "`type Status = 'success' | 'error';`",
-                "`as` force la conversion alors que `satisfies` vérifie si la valeur et le type sont compatibles.",
-                "Il s'agit d'un 'mapped type', il filtre les clés de type number `{0: 1, a: 2}` devient `{a: 2}`."
-            ]
-        },
-        {
-            "theme": "Protocole HTTP",
-            "category": "dev-back",
-            "questions": [
-                "HTTP signifie Hyper Text Transfer Protocol ou Hyper Techno Turtle Party ?",
-                "Quelle méthode HTTP utilise-t-on pour supprimer une donnée ?",
-                "Quelle est la différence entre les méthodes `PUT` et `PATCH` ?",
-                "Que signifie le status HTTP 403 ?",
-                "Quel est le temps d'expiration par défaut d'un cookie ? Quels attributs utilise-t-on sinon pour le spéficier ?"
-            ],
-            "answers": [
-                "Hyper Text Transfer Protocol, même si j'aurais préféré l'autre 🤷",
-                "`DELETE`",
-                "PUT remplace la ressource alors que PATCH fait une mise à jour partielle.",
-                "403 Forbidden est le status HTTP utilisé lorsque la requête est comprise mais pas autorisée par le serveur.",
-                "Par défaut, un cookie expire à la fin de la session utilisateur. Sinon on peut utiliser Max-Age ou Expires pour le spécifier."
-            ]
-        },
-        {
-            "theme": "Classes en Python",
-            "category": "dev-back",
-            "questions": [
-                "Quel convention applique-t-on aux noms de classes, `snake_case`, `PascalCase` ou `KantCase` ?",
-                "Quel mot clé fait référence à un attribut d'instance, `self` ou `this` ?",
-                "Quelle alternative à la syntaxe `Class()` peut-on utiliser pour créer une instance de classe ?",
-                "Peut on accèder directement à un attribut d'instance définit par un nom commençant par un tiret bas (`self._attribut`) ?",
-                "Comment créer une propriété calculée ?"
-            ],
-            "answers": [
-                "`PascalCase`, en référence au language Pascal, qui doit son nom au philosophe et mathématicien Blaise Pascal. ",
-                "`self`, `this` est l'équivalent en Javascript.",
-                "On peut définir une méthode de classe qui renvoit une instance, on parle alors de `factory method` (méthode usine).",
-                "Oui, les membres privés n'existent pas réellement en Python. ",
-                "On utilise le décorateur `@property` pour définir une méthode à laquelle on peut accèder avec la syntaxe `class.property`."
-            ]
-        },
-        {
-            "theme": "Structures de données en Python",
-            "category": "dev-back",
-            "questions": [
-                "A quelle structure de données correspond la notation entre crochets ?",
-                "Laquelle de ces structures de données n'existe pas par défaut: `set`, `array` ou `dict` ?",
-                "Quelle est la différence entre `sorted(list)` et `list.sort()` ?",
-                "Pourquoi utiliser `dict.items()` plutot que `list(dict)` ?",
-                "L'expression `def function(): return 1, 2, 3, 4; a, b, c, d = function();` est valide, pourquoi ?"
-            ],
-            "answers": [
-                "`list`, similaire aux tableaux en Javascript.",
-                "`array`, corresponsant aux tableaux au sens classique. Ils sont disponibles dans la librairie NumPy.",
-                "`sorted()` renvoie une copie triée de la liste, alors que `list.sort()` modifie directement la liste existante.",
-                "`dict.items()` permet d'itérer sur le dictionnaire en accédant aux clés et aux valeurs, `list(dict)` ne comprends que les clés.",
-                "La fonction retourne implicitement un `tuple`, un itérable qui peut être automatiquement assigné à des variables."
-            ]
-        },
-        {
-            "theme": "Requêtes SQL",
-            "category": "dev-back",
-            "questions": [
-                "SQL signifie Structured Query Language ou Secret Quantum Launcher ?",
-                "Quel mot clé utilise-t-on pour filtrer un `SELECT` en fonction d'une colonne ?",
-                "Cite moi au moins 2 type de JOIN. +1 case si tu sais expliquer la différence !",
-                "Quelle est la différence entre `PRIMARY KEY` et `FOREIGN KEY` ?",
-                "À quoi servent les RLS ?"
-            ],
-            "answers": [
-                "Structured Query Language",
-                "On utilise `WHERE`. Exemple : `SELECT * FROM a WHERE a.id = ?`",
-                "`INNER JOIN` retourne l'intersection des 2 tables, `LEFT JOIN` retourne les lignes de la 1ère table + l'intersection (autres réponses valides acceptées).",
-                "`PRIMARY KEY` correspond à l'id de la table, `FOREIGN KEY` réference une autre table.",
-                "Ajouter des régles de sécurité sur la db."
-            ]
-        },
-        {
-            "theme": "GIT",
-            "category": "dev-tools",
-            "questions": [
-                "À quoi sert la commande `git push` ?",
-                "Quelle commande permet de lister les commits ?",
-                "Qui est l'inventeur de GIT ?",
-                "Quel mot clé utilise-t-on pour fusionner plusieurs commits ensemble lors d'un rebase ?",
-                "À quoi sert la commande `git cherry-pick` ?"
-            ],
-            "answers": [
-                "Elle permet d'envoyer ses commits en local sur la remote (github par exemple).",
-                "`git log`",
-                "C'est Linus Torwald qui a inventé GIT en 2005.",
-                "On utilise le mot clé `squash` ou `fixup`. `Fixup` garde uniquement le dernier message et `squash` les gardent tous.",
-                "Elle permet d'appliquer le code d'un commit précis à notre état courant."
-            ]
-        },
-        {
-            "theme": "Commandes shell #2",
-            "category": "dev-tools",
-            "questions": [
-                "Comment s'appelle l'utilitaire de ligne de commande le plus populaire sur Linux, `Bash` ou `Cash` ?",
-                "La commande `touch` sert à dater un fichier, mais elle permet aussi de... ?",
-                "Parmi les commandes `rn`, `rename` et `mv`, lesquelles permettent de renommer un fichier ?",
-                "Quelle commande permet d'effectuer des recherches très précises dans les fichiers et dossiers ?",
-                "Que signifie chaque chiffre dans la commande `chmod 750` ?"
-            ],
-            "answers": [
-                "Bash, pour Bourne-Again SHell. Bash est à la fois un utilitaire (un `shell`) et un language de programmation.",
-                "Créer un fichier s'il n'existe pas tout en évitant l'écraser s'il existe déjà, contrairement à `make`.",
-                "Par défaut seul `mv` est disponible sur toutes les distributions Linux, mais certaines disposent de `rename`.",
-                "La commande `grep`, qui compare les chaines de caractères présentes dans les données avec un schéma fourni.",
-                "Le 7 signifie `propriétaires: tous les droits`, le 5 `groupes: lire/exécuter` et le 0 `autres: aucun droit`."
-            ]
-        },
-        {
-            "theme": "VSCode",
-            "category": "dev-tools",
-            "questions": [
-                "Quel est le nom complet de VSCode ?",
-                "Quel racourci permet de rechercher rapidement un fichier ?",
-                "Est-il possible d'utiliser git directement avec l'interface de VSCode ?",
-                "Quelle touche permet de créer plusieurs curseurs au clique pour écrire à plusieurs endroits en même temps ?",
-                "Comment faire pour changer le nombre d'espaces utilisés pour une tab dans le code ? (passer de 2 à 4 par exemple)"
-            ],
-            "answers": [
-                "Visual Studio Code",
-                "⌘+P sur Mac ou control+P sur Windows",
-                "Oui tout à fait ! C'est assez pratique d'ailleurs 😉",
-                "Il s'agit de la touche alt (⌥)",
-                "Il existe plusieurs solutions, on peut changer les settings généraux, ceux du workspace, ou utiliser un formatteur comme Prettier par exemple."
-            ]
-        },
-        {
-            "theme": "Commandes shell",
-            "category": "dev-tools",
-            "questions": [
-                "La commande `cd` permet-elle de changer de dossier ou d'écouter un CD ?",
-                "Quelle option de `ls` permet d'afficher les fichiers cachés (dot files)",
-                "Quel symbole utilise-t-on devant une variable pour accéder à sa valeur ?",
-                "Comment ajoute-on les droits d'écriture sur un fichier ?",
-                "Comment fait-on pour exécuter une commande en background en évitant qu'elle affiche des messages ?"
-            ],
-            "answers": [
-                "cd (change directory), permet de changer de dossier.",
-                "`ls -a`",
-                "On utilise `$`, par exemple `echo $PWD` affiche la variable PWD qui contient le dossier courant.",
-                "`chmod +w file.txt` ajoute les droits d'écritures pour tout type d'utilisateur",
-                "On utilise `&` suivi de `> /dev/null` pour rediriger les messages."
-            ]
-        },
-        {
-            "theme": "Structures de données",
-            "category": "algo-paradigms",
-            "questions": [
-                "Si `arr.length === 3` renvoie `true`, combien d'éléments contient `arr` ?",
-                "Quels caractères utilise-t-on pour déclarer un tableau en JavaScript ?",
-                "Quelle est la différence entre les structures de données stack (pile) et queue ?",
-                "Quelle structure est la meilleure entre une liste chaînée et un tableau lorsqu'on doit souvent insérer des données ?",
-                "Quelle est la complexité temporelle en insertion dans un arbre rouge noir ?"
-            ],
-            "answers": [
-                "3 évidemment ! Et non, il n'y a pas de piège 😅",
-                "Comme dans beaucoup de langages, on utilise les crochets : `[]`.",
-                "Les deux ajoutent les éléments par le haut mais la queue les retire par le bas alors que la stack les retire par le haut.",
-                "C'est la liste chaînée car dans le cas d'un tableau on doit le recréer entièrement à chaque insertion.",
-                "`O(log(n))`, même chose pour l'accès et la suppression."
-            ]
-        },
-        {
-            "theme": "Base binaire",
-            "category": "algo-paradigms",
-            "questions": [
-                "Quels chiffres sont utilisés pour écrire du binaire ?",
-                "Quelle est la différence entre un bit et un octet (byte) ?",
-                "Combien fait le chiffre binaire 101010 en decimal ?",
-                "À quoi servent respectivement les operateurs `^`, `|`, `&`, et `~` (en JS par exemple) ? (avance de 1 par bonne réponse)",
-                "Décris les opérations binaires pour extraire le vert d'une couleur stockée dans un nombre."
-            ],
-            "answers": [
-                "On utilise les chiffres 1 et 0.",
-                "Un octet est un ensemble de 8 bits. `10010011` est un octet.",
-                "42",
-                "Ils effectuent des opérations binaires, dans le même ordre : XOR, OR, AND et NOT.",
-                "`const green = (color >> 8) & 0xFF`"
-            ]
-        },
-        {
-            "theme": "Design patterns",
-            "category": "algo-paradigms",
-            "questions": [
-                "Le design pattern Factory sert à créer des objets ou recycler des chaussures ?",
-                "À quoi sert un Singleton ?",
-                "Comment fonctionne le design pattern Observer ?",
-                "Explique la différence entre les patterns de création (creational patterns) et de structure (structural patterns).",
-                "Comment faire pour implementer le design pattern Iterator en JavaScript ?"
-            ],
-            "answers": [
-                "Créer des objets 🙄",
-                "Un Singleton permet de partager l'instance d'un objet globalement et s'assurer qu'il n'y ait qu'une seule instance.",
-                "On attache des observers à un objet ce qui permet de tous les notifier avec un event. C'est comme ça que fonctionne `addEventListener` en JS par exemple.",
-                "Création : l'instantiation des objets. Structure : la relation entre les objets.",
-                "En retournant un objet avec une methode `next: () => ({done, value})` et `[Symbol.iterator]: () => this`"
-            ]
-        },
-        {
-            "theme": "Requête HTTP",
-            "category": "dev-back",
-            "questions": [
-                "Une url HTTP commence-t-elle par `http://` ou `html://` ?",
-                "Laquelle de ses méthodes n'existe pas en HTTP : `GET`, `POST`, `PASTE`, `DELETE` ?",
-                "Comment appelle-t-on la partie de la requête permettant de passer des données ?",
-                "À quoi servent les cookies ? 🍪",
-                "À quoi sert le status 218 ?"
-            ],
-            "answers": [
-                "`http://` 🙄",
-                "`PASTE`",
-                "Le `body`, il s'agit du texte directement après les headers.",
-                "À garder des données d'une requête à l'autre, des infos utilisateur par exemple.",
-                "À contourner le comportement d'Apache utilisé comme un reverse proxy dans le cas d'une erreur 404, mais si tu le savais pas c'est pas bien grave 😅"
-            ]
-        },
-        {
-            "theme": "Go",
-            "category": "dev-back",
-            "questions": [
-                "Quel mot clé utilise t'on pour déclarer une fonction ?",
-                "À quoi sert l'opérator `:=` ?",
-                "Quel opérateur utilise-t-on pour déréférencer un pointer ?",
-                "Quelle est la différence entre `array` et `slice` ?",
-                "Comment partage-t-on des données à travers plusieurs goroutines ?"
-            ],
-            "answers": [
-                "Le mot clé `func`.",
-                "Il permet de déclarer une variable avec une valeur en inférant son type automatiquement.",
-                "On utilise `*` comme en C.",
-                "Contrairement aux arrays, les slices peuvent avoir une taille qui change dynamiquement.",
-                "On utilise les channels, déclarés avec le mot clé `chan`."
-            ]
-        },
-        {
-            "theme": "HTML",
-            "category": "dev-front",
-            "questions": [
-                "Quelle balise HTML est utilisée pour créer des liens hypertextes ?",
-                "Comment inclure une feuille de style externe dans une page HTML ?",
-                "Quel attribut HTML est utilisé pour définir du texte en exposant ?",
-                "Comment incorporer une vidéo avec des contrôles de lecture dans une page ?",
-                "Quel attribut permet de stocker des données personnalisées ?"
-            ],
-            "answers": [
-                "La balise pour les liens est `<a>`",
-                "Incluez une feuille de style externe avec `<link rel=\"stylesheet\" href=\"style.css\">`",
-                "L'attribut pour le texte en exposant est `<p>10<sup>2</sup></p>` (pour 10 au carré).",
-                "Intégrez une vidéo avec contrôles via `<video controls><source src=\"video.mp4\" type=\"video/mp4\"></video>`",
-                "Utilisez l'attribut `data-*` (par exemple, `data-info=\"valeur\"`)"
-            ]
-        },
-        {
-            "theme": "Testeur d'api",
-            "category": "dev-tools",
-            "questions": [
-                "Donne moi le nom d'un testeur d'api?",
-                "A quoi ça sert un testeur d'api ? ",
-                "Si je fais une requête sur `https://www.google.com/`, ça fonctionne ?",
-                "Peut-on créer un environnement dans un testeur d'api ? Et à quoi ça nous sert ?",
-                "Dans le cas où j'ai plusieurs tests, c'est possible de les lancer tous en même temps ? "
-            ],
-            "answers": [
-                "Postman, Bruno, ...",
-                "Faire des requettes http sans coder et vérifier que tes routes fonctionnent bien.",
-                "Oui, à partir du moment où la requête est autorisée, le logiciel peu la gérer",
-                "Oui, pour pouvoir tester sur d'autres machines sans avoir de contraintes.",
-                "Oui, pour ça j'ai créé un scénario de test ou j'ai déjà préalablement fait tout mes tests."
-            ]
-        },
-        {
-            "theme": "Complexité algorithmique",
-            "category": "algo-paradigms",
-            "questions": [
-                "A quoi sert la complexité d'un algo ?",
-                "Quels sont les 2 cas extrêmes pour lesquels on calcule la complexité ?",
-                "Si j'ai une boucle qui itère n fois, de combien sera la complexité de celle-ci ?",
-                "Quelle notation utilise-t-on pour parler d'une complexité linéaire dans le pire des cas ?",
-                "Parmi les algo de tri classiques, quelle est la complexité dans le pire des cas la plus faible ?"
-            ],
-            "answers": [
-                "Mesurer la quantité de ressources (temps, espaces mémoire) que l'algo utilise dans différents cas",
-                "Dans le pire des cas et dans le meilleur",
-                "La complexité sera de n, quel que soit le cas",
-                "On utilise O(n) (grand O de n). C'est une notation mathématiques, utilisée pour de la comparaison asymptotique",
-                "C'est n*log(n). Algo de tri fusion et par tas, par exemple"
-            ]
-        }
-    ]
+	"cards": [
+		{
+			"theme": "Déclaration de Variables JS",
+			"category": "dev-front",
+			"questions": [
+				"Quel mot clé entre `let`, `var`, et `if` ne permet pas de déclarer une variable ?",
+				"Quel est le mot clé utilisé pour déclarer une variable dont la valeur ne doit pas changer ?",
+				"Est-ce qu'une variable peut changer de type après sa déclaration ?",
+				"Comment appelle-t-on la syntaxe qui permet de déclarer plusieurs variables à partir des champs d'un object ?",
+				"Qu'est-ce que le hoisting et quel mot clé permet de hoister une variable ?"
+			],
+			"answers": [
+				"`if`, c'est pour les conditions !",
+				"`const`",
+				"Oui. JS est un langage au typage dynamique, ce qui fait que le type d'une variable peut changer n'importe quand.",
+				"On appelle cette syntaxe la destructuration. Par exemple: `const {name, age} = person;`.",
+				"Le hoisting permet d'accéder à une variable avant sa déclaration. On utilise le mot clé `var` pour hoister une variable."
+			]
+		},
+		{
+			"theme": "Tableaux en Javascript",
+			"category": "dev-front",
+			"questions": [
+				"Comment accéde-t-on au dernier élément d'un tableau en JS ? (+ 1 si tu connais deux méthodes)",
+				"Peut-on modifier le contenu d'un tableau déclaré avec le mot-clé `const` ?",
+				"Les tableaux sont-ils implementés de la même manière que dans la plupart des languages ?",
+				"`Array(1) === [undefined] && Array(1)[0] === undefined`, ça revoie `true` ou `false` ?",
+				"Quel serait le résultat de [1,`80`, 9, `16`].sort() ?"
+			],
+			"answers": [
+				"`arr[length - 1] ou arr.last(el => el)`",
+				"Oui, car la variable fait réference au tableau pas à son contenu et cette réference ne change pas.",
+				"Non, en général un tableau correspond à une plage d'adresses mémoire dont la taille est fixe.",
+				"False! Les éléments vides ne sont pas explicitement indéfinis, mais tenter d'y accéder renvoie `undefined`.",
+				"[1, `16`, `80`, 9], car par défaut, Array.sort() converti les éléments en chaîne de caractères et compare leur valeur Unicode."
+			]
+		},
+		{
+			"theme": "HTML",
+			"category": "dev-front",
+			"questions": [
+				"Quelle balise permet d'afficher une image ?",
+				"Quelles sont les 2 balises que l'on utilise lorsqu'on ne veut pas de sémantique en particulier ?",
+				"Quel attribut utilise-t-on pour ouvrir un lien dans un nouvel onglet ?",
+				"Quel attribut permet d'attendre que le HTML soit entièrement chargé avant d'exécuter le contenu d'une balise script ?",
+				"Quel préfixe d'attribut utilise-t-on généralement pour ajouter des informations d'accessibilité à une balise ? (+1 case si tu détailles l'acronyme)"
+			],
+			"answers": [
+				"Il s'agit de la balise `<img />`.",
+				"On utilise les balises `<div>` et `<span>`.",
+				"On utilise l'attribut `target=\"_blank\"`.",
+				"L'attribut `defer`, exemple : `<script defer src=\"index.js\"></script>`.",
+				"Le prefix `aria-` qui signifie Accessible Rich Internet Applications."
+			]
+		},
+		{
+			"theme": "Formulaires HTML",
+			"category": "dev-front",
+			"questions": [
+				"Quel élément doit être associé à un `<input>` pour des questions d'accessibilité et de validité du formulaire ?",
+				"Quel élément utilise-t-on pour créer un champ de texte dans un formulaire, `<input type='text'>` ou `<input type='field'>` ?",
+				"Quelle paire d'éléments permet de créer une sous-section dans un formulaire et d'y ajouter des instructions ou des précisions ?",
+				"Comment faire pour permettre aux utilisateurs d'envoyer un selfie via un formulaire ?",
+				"Quelle valeur autre que `get` et `post` peut-on donner à l'attribut `action` d'un formulaire ?"
+			],
+			"answers": [
+				"Il faut toujours associer un élément `<label>` à un champ de formulaire.",
+				"On utilise `type='text'`, mais `type='field'` fonctionne tout de même car l'attribut type par défaut est `text` et `field` n'existe pas.",
+				"On délimite un groupe de champs avec `<fieldset>`, auquel on associera l'élément `<legend>`.",
+				"On ajoute à un <input type='file'> l'attribut `capture='user'`.",
+				"La valeur `dialog`, qui permet de fermer une boîte de dialogue (`<dialog>`) dans laquelle le formulaire est contenu."
+			]
+		},
+		{
+			"theme": "Framework JS",
+			"category": "dev-front",
+			"questions": [
+				"Peux-tu citer tous les frameworks JS créés depuis 2007 ?",
+				"À quoi sert Express JS ?",
+				"Quelle est la différence entre React et Next ?",
+				"Dans quel ordre sont sortis les frameworks Vue, Svelte et React ?",
+				"Quelle est la différence fondamentale entre le modèle de Reactivité de Solid et React ?"
+			],
+			"answers": [
+				"Que tu répondes oui ou non, tu as répondu à la question, bien joué !",
+				"Il permet de créer des backends et des APIs en Node JS.",
+				"Next est une surcouche de React permettant de genérer des components côté serveur.",
+				"React, Vue puis Svelte",
+				"React s'appuie sur le virtual DOM alors que Solid met à jour le DOM directement."
+			]
+		},
+		{
+			"theme": "React Hooks",
+			"category": "dev-front",
+			"questions": [
+				"Vrai ou faux ? Le capitaine Crochet est l'ennemi juré de Peter Pan.",
+				"Par quel mot commence le nom des fonctions de type hook ?",
+				"Quel hook permet de récupérer une valeur dans un sous composant sans passer par les props ?",
+				"Pourquoi `useMemo()` retourne une fonction et pas directement une valeur ?",
+				"À quoi sert le hook `useCallback() ?`"
+			],
+			"answers": [
+				"Vrai, même si j'avoue ça n'a pas grand chose à voir.",
+				"Elles commencent toujours par `use`. `useState()` ou `useEffect()` par exemple.",
+				"`useContext()`",
+				"Car la valeur doit pouvoir être recalculée en fonction des dépendances.",
+				"Il sert à memoifier une fonction pour éviter de la créer et donc déclencher un rendu des composants enfants qui l'utilisent."
+			]
+		},
+		{
+			"theme": "TypeScript",
+			"category": "dev-front",
+			"questions": [
+				"TypeScript permet de rajouter à JavaScript des types ou des emojis ?",
+				"Dans le code `const n: number = 10;` le type est-il obligatoire ?",
+				"Une variable de type `Status` peut être égale à `'success'` ou `'error'`. À quoi ressemble le type `Status` ?",
+				"Quelle est la différence entre `as` et `satisfies` ?",
+				"`type A<T> = {[K in keyof T as K extends number ? never : K]: T[K];};` que fait ce type ?"
+			],
+			"answers": [
+				"Des emojis ! (nan j'rigole)",
+				"Non car TypeScript peut l'inférer automatiquement.",
+				"`type Status = 'success' | 'error';`",
+				"`as` force la conversion alors que `satisfies` vérifie si la valeur et le type sont compatibles.",
+				"Il s'agit d'un 'mapped type', il filtre les clés de type number `{0: 1, a: 2}` devient `{a: 2}`."
+			]
+		},
+		{
+			"theme": "Protocole HTTP",
+			"category": "dev-back",
+			"questions": [
+				"HTTP signifie Hyper Text Transfer Protocol ou Hyper Techno Turtle Party ?",
+				"Quelle méthode HTTP utilise-t-on pour supprimer une donnée ?",
+				"Quelle est la différence entre les méthodes `PUT` et `PATCH` ?",
+				"Que signifie le status HTTP 403 ?",
+				"Quel est le temps d'expiration par défaut d'un cookie ? Quels attributs utilise-t-on sinon pour le spéficier ?"
+			],
+			"answers": [
+				"Hyper Text Transfer Protocol, même si j'aurais préféré l'autre 🤷",
+				"`DELETE`",
+				"PUT remplace la ressource alors que PATCH fait une mise à jour partielle.",
+				"403 Forbidden est le status HTTP utilisé lorsque la requête est comprise mais pas autorisée par le serveur.",
+				"Par défaut, un cookie expire à la fin de la session utilisateur. Sinon on peut utiliser Max-Age ou Expires pour le spécifier."
+			]
+		},
+		{
+			"theme": "Classes en Python",
+			"category": "dev-back",
+			"questions": [
+				"Quelle convention applique-t-on aux noms de classes, `snake_case`, `PascalCase` ou `KantCase` ?",
+				"Quel mot-clé fait référence à un attribut d'instance, `self` ou `this` ?",
+				"Quelle alternative à l'initialisation `()` peut-on utiliser pour créer une instance de classe ?",
+				"Peut-on accéder directement à un attribut d'instance définit par un nom commençant par un tiret bas ?",
+				"Comment créer une propriété calculée ?"
+			],
+			"answers": [
+				"`PascalCase`, en référence au language Pascal, qui doit son nom au philosophe et mathématicien Blaise Pascal. ",
+				"`self`, `this` est l'équivalent en Javascript.",
+				"On peut définir une méthode de classe qui renvoie une instance, on par	le alors de `factory method` (méthode usine).",
+				"Oui, les attributs privés n'existent pas réellement en Python.",
+				"On utilise le décorateur `@property` pour définir une méthode à laquelle on peut accéder avec la syntaxe `class.property`."
+			]
+		},
+		{
+			"theme": "Structures de données en Python",
+			"category": "dev-back",
+			"questions": [
+				"A quelle structure de données correspond la notation entre crochets ?",
+				"Laquelle de ces structures de données n'existe pas par défaut: `set`, `array` ou `dict` ?",
+				"Quelle est la différence entre `sorted(list)` et `list.sort()` ?",
+				"Pourquoi utiliser `dict.items()` plutot que `list(dict)` ?",
+				"L'expression `def function(): return 1, 2, 3, 4` -> `a, b, c, d = function();` est valide, pourquoi ?"
+			],
+			"answers": [
+				"`list`, similaire aux tableaux en Javascript.",
+				"`array`, correspondant aux tableaux au sens classique. Ils sont disponibles dans la librairie NumPy.",
+				"`sorted()` renvoie une copie triée de la liste, alors que `list.sort()` modifie directement la liste existante.",
+				"`dict.items()` permet d'itérer sur le dictionnaire en accédant aux clés et aux valeurs, `list(dict)` ne comprends que les clés.",
+				"La fonction retourne implicitement un `tuple` et assigne automatiquement les entrées aux variables."
+			]
+		},
+		{
+			"theme": "Requêtes SQL",
+			"category": "dev-back",
+			"questions": [
+				"SQL signifie Structured Query Language ou Secret Quantum Launcher ?",
+				"Quel mot clé utilise-t-on pour filtrer un `SELECT` en fonction d'une colonne ?",
+				"Cite moi au moins 2 type de JOIN. +1 case si tu sais expliquer la différence !",
+				"Quelle est la différence entre `PRIMARY KEY` et `FOREIGN KEY` ?",
+				"À quoi servent les RLS ?"
+			],
+			"answers": [
+				"Structured Query Language",
+				"On utilise `WHERE`. Exemple : `SELECT * FROM a WHERE a.id = ?`",
+				"`INNER JOIN` retourne l'intersection des 2 tables, `LEFT JOIN` retourne les lignes de la 1ère table + l'intersection (autres réponses valides acceptées).",
+				"`PRIMARY KEY` correspond à l'id de la table, `FOREIGN KEY` réference une autre table.",
+				"Ajouter des régles de sécurité sur la db."
+			]
+		},
+		{
+			"theme": "GIT",
+			"category": "dev-tools",
+			"questions": [
+				"À quoi sert la commande `git push` ?",
+				"Quelle commande permet de lister les commits ?",
+				"Qui est l'inventeur de GIT ?",
+				"Quel mot clé utilise-t-on pour fusionner plusieurs commits ensemble lors d'un rebase ?",
+				"À quoi sert la commande `git cherry-pick` ?"
+			],
+			"answers": [
+				"Elle permet d'envoyer ses commits en local sur la remote (github par exemple).",
+				"`git log`",
+				"C'est Linus Torwald qui a inventé GIT en 2005.",
+				"On utilise le mot clé `squash` ou `fixup`. `Fixup` garde uniquement le dernier message et `squash` les gardent tous.",
+				"Elle permet d'appliquer le code d'un commit précis à notre état courant."
+			]
+		},
+		{
+			"theme": "VSCode",
+			"category": "dev-tools",
+			"questions": [
+				"Quel est le nom complet de VSCode ?",
+				"Quel racourci permet de rechercher rapidement un fichier ?",
+				"Est-il possible d'utiliser git directement avec l'interface de VSCode ?",
+				"Quelle touche permet de créer plusieurs curseurs au clique pour écrire à plusieurs endroits en même temps ?",
+				"Comment faire pour changer le nombre d'espaces utilisés pour une tab dans le code ? (passer de 2 à 4 par exemple)"
+			],
+			"answers": [
+				"Visual Studio Code",
+				"⌘+P sur Mac ou control+P sur Windows",
+				"Oui tout à fait ! C'est assez pratique d'ailleurs 😉",
+				"Il s'agit de la touche alt (⌥)",
+				"Il existe plusieurs solutions, on peut changer les settings généraux, ceux du workspace, ou utiliser un formatteur comme Prettier par exemple."
+			]
+		},
+		{
+			"theme": "Commandes shell",
+			"category": "dev-tools",
+			"questions": [
+				"La commande `cd` permet-elle de changer de dossier ou d'écouter un CD ?",
+				"Quelle option de `ls` permet d'afficher les fichiers cachés (dot files)",
+				"Quel symbole utilise-t-on devant une variable pour accéder à sa valeur ?",
+				"Comment ajoute-on les droits d'écriture sur un fichier ?",
+				"Comment fait-on pour exécuter une commande en background en évitant qu'elle affiche des messages ?"
+			],
+			"answers": [
+				"cd (change directory), permet de changer de dossier.",
+				"`ls -a`",
+				"On utilise `$`, par exemple `echo $PWD` affiche la variable PWD qui contient le dossier courant.",
+				"`chmod +w file.txt` ajoute les droits d'écritures pour tout type d'utilisateur",
+				"On utilise `&` suivi de `> /dev/null` pour rediriger les messages."
+			]
+		},
+		{
+			"theme": "Commandes shell #2",
+			"category": "dev-tools",
+			"questions": [
+				"Comment s'appelle l'utilitaire de ligne de commande le plus populaire sur Linux, `Bash` ou `Cash` ?",
+				"La commande `touch` sert à dater un fichier, mais elle permet aussi de... ?",
+				"Parmi les commandes `rn`, `rename` et `mv`, lesquelles permettent de renommer un fichier ?",
+				"Quelle commande permet d'effectuer des recherches très précises dans les fichiers et dossiers ?",
+				"Que signifie chaque chiffre dans la commande `chmod 750` ?"
+			],
+			"answers": [
+				"Bash, pour Bourne-Again SHell. Bash est à la fois un utilitaire (un `shell`) et un language de programmation.",
+				"Créer un fichier s'il n'existe pas tout en évitant de l'écraser s'il existe déjà, contrairement à `make`.",
+				"Par défaut seul `mv` est disponible sur toutes les distributions Linux, mais certaines disposent de `rename`.",
+				"La commande `grep`, qui compare les chaines de caractères présentes dans les données avec un schéma fourni.",
+				"Le 7 signifie `propriétaires: tous les droits`, le 5 `groupes: lire/exécuter` et le 0 `autres: aucun droit`."
+			]
+		},
+		{
+			"theme": "Structures de données",
+			"category": "algo-paradigms",
+			"questions": [
+				"Si `arr.length === 3` renvoie `true`, combien d'éléments contient `arr` ?",
+				"Quels caractères utilise-t-on pour déclarer un tableau en JavaScript ?",
+				"Quelle est la différence entre les structures de données stack (pile) et queue ?",
+				"Quelle structure est la meilleure entre une liste chaînée et un tableau lorsqu'on doit souvent insérer des données ?",
+				"Quelle est la complexité temporelle en insertion dans un arbre rouge noir ?"
+			],
+			"answers": [
+				"3 évidemment ! Et non, il n'y a pas de piège 😅",
+				"Comme dans beaucoup de langages, on utilise les crochets : `[]`.",
+				"Les deux ajoutent les éléments par le haut mais la queue les retire par le bas alors que la stack les retire par le haut.",
+				"C'est la liste chaînée car dans le cas d'un tableau on doit le recréer entièrement à chaque insertion.",
+				"`O(log(n))`, même chose pour l'accès et la suppression."
+			]
+		},
+		{
+			"theme": "Base binaire",
+			"category": "algo-paradigms",
+			"questions": [
+				"Quels chiffres sont utilisés pour écrire du binaire ?",
+				"Quelle est la différence entre un bit et un octet (byte) ?",
+				"Combien fait le chiffre binaire 101010 en decimal ?",
+				"À quoi servent respectivement les operateurs `^`, `|`, `&`, et `~` (en JS par exemple) ? (avance de 1 par bonne réponse)",
+				"Décris les opérations binaires pour extraire le vert d'une couleur stockée dans un nombre."
+			],
+			"answers": [
+				"On utilise les chiffres 1 et 0.",
+				"Un octet est un ensemble de 8 bits. `10010011` est un octet.",
+				"42",
+				"Ils effectuent des opérations binaires, dans le même ordre : XOR, OR, AND et NOT.",
+				"`const green = (color >> 8) & 0xFF`"
+			]
+		},
+		{
+			"theme": "Design patterns",
+			"category": "algo-paradigms",
+			"questions": [
+				"Le design pattern Factory sert à créer des objets ou recycler des chaussures ?",
+				"À quoi sert un Singleton ?",
+				"Comment fonctionne le design pattern Observer ?",
+				"Explique la différence entre les patterns de création (creational patterns) et de structure (structural patterns).",
+				"Comment faire pour implementer le design pattern Iterator en JavaScript ?"
+			],
+			"answers": [
+				"Créer des objets 🙄",
+				"Un Singleton permet de partager l'instance d'un objet globalement et s'assurer qu'il n'y ait qu'une seule instance.",
+				"On attache des observers à un objet ce qui permet de tous les notifier avec un event. C'est comme ça que fonctionne `addEventListener` en JS par exemple.",
+				"Création : l'instantiation des objets. Structure : la relation entre les objets.",
+				"En retournant un objet avec une methode `next: () => ({done, value})` et `[Symbol.iterator]: () => this`"
+			]
+		},
+		{
+			"theme": "Requête HTTP",
+			"category": "dev-back",
+			"questions": [
+				"Une url HTTP commence-t-elle par `http://` ou `html://` ?",
+				"Laquelle de ses méthodes n'existe pas en HTTP : `GET`, `POST`, `PASTE`, `DELETE` ?",
+				"Comment appelle-t-on la partie de la requête permettant de passer des données ?",
+				"À quoi servent les cookies ? 🍪",
+				"À quoi sert le status 218 ?"
+			],
+			"answers": [
+				"`http://` 🙄",
+				"`PASTE`",
+				"Le `body`, il s'agit du texte directement après les headers.",
+				"À garder des données d'une requête à l'autre, des infos utilisateur par exemple.",
+				"À contourner le comportement d'Apache utilisé comme un reverse proxy dans le cas d'une erreur 404, mais si tu le savais pas c'est pas bien grave 😅"
+			]
+		},
+		{
+			"theme": "Go",
+			"category": "dev-back",
+			"questions": [
+				"Quel mot clé utilise t'on pour déclarer une fonction ?",
+				"À quoi sert l'opérator `:=` ?",
+				"Quel opérateur utilise-t-on pour déréférencer un pointer ?",
+				"Quelle est la différence entre `array` et `slice` ?",
+				"Comment partage-t-on des données à travers plusieurs goroutines ?"
+			],
+			"answers": [
+				"Le mot clé `func`.",
+				"Il permet de déclarer une variable avec une valeur en inférant son type automatiquement.",
+				"On utilise `*` comme en C.",
+				"Contrairement aux arrays, les slices peuvent avoir une taille qui change dynamiquement.",
+				"On utilise les channels, déclarés avec le mot clé `chan`."
+			]
+		},
+		{
+			"theme": "HTML",
+			"category": "dev-front",
+			"questions": [
+				"Quelle balise HTML est utilisée pour créer des liens hypertextes ?",
+				"Comment inclure une feuille de style externe dans une page HTML ?",
+				"Quel attribut HTML est utilisé pour définir du texte en exposant ?",
+				"Comment incorporer une vidéo avec des contrôles de lecture dans une page ?",
+				"Quel attribut permet de stocker des données personnalisées ?"
+			],
+			"answers": [
+				"La balise pour les liens est `<a>`",
+				"Incluez une feuille de style externe avec `<link rel=\"stylesheet\" href=\"style.css\">`",
+				"L'attribut pour le texte en exposant est `<p>10<sup>2</sup></p>` (pour 10 au carré).",
+				"Intégrez une vidéo avec contrôles via `<video controls><source src=\"video.mp4\" type=\"video/mp4\"></video>`",
+				"Utilisez l'attribut `data-*` (par exemple, `data-info=\"valeur\"`)"
+			]
+		},
+		{
+			"theme": "Testeur d'api",
+			"category": "dev-tools",
+			"questions": [
+				"Donne moi le nom d'un testeur d'api?",
+				"A quoi ça sert un testeur d'api ? ",
+				"Si je fais une requête sur `https://www.google.com/`, ça fonctionne ?",
+				"Peut-on créer un environnement dans un testeur d'api ? Et à quoi ça nous sert ?",
+				"Dans le cas où j'ai plusieurs tests, c'est possible de les lancer tous en même temps ? "
+			],
+			"answers": [
+				"Postman, Bruno, ...",
+				"Faire des requettes http sans coder et vérifier que tes routes fonctionnent bien.",
+				"Oui, à partir du moment où la requête est autorisée, le logiciel peu la gérer",
+				"Oui, pour pouvoir tester sur d'autres machines sans avoir de contraintes.",
+				"Oui, pour ça j'ai créé un scénario de test ou j'ai déjà préalablement fait tout mes tests."
+			]
+		},
+		{
+			"theme": "Complexité algorithmique",
+			"category": "algo-paradigms",
+			"questions": [
+				"A quoi sert la complexité d'un algo ?",
+				"Quels sont les 2 cas extrêmes pour lesquels on calcule la complexité ?",
+				"Si j'ai une boucle qui itère n fois, de combien sera la complexité de celle-ci ?",
+				"Quelle notation utilise-t-on pour parler d'une complexité linéaire dans le pire des cas ?",
+				"Parmi les algo de tri classiques, quelle est la complexité dans le pire des cas la plus faible ?"
+			],
+			"answers": [
+				"Mesurer la quantité de ressources (temps, espaces mémoire) que l'algo utilise dans différents cas",
+				"Dans le pire des cas et dans le meilleur",
+				"La complexité sera de n, quel que soit le cas",
+				"On utilise O(n) (grand O de n). C'est une notation mathématiques, utilisée pour de la comparaison asymptotique",
+				"C'est n*log(n). Algo de tri fusion et par tas, par exemple"
+			]
+		}
+	]
 }
