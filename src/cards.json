@@ -55,6 +55,24 @@
             ]
         },
         {
+            "theme": "Formulaires HTML",
+            "category": "dev-front",
+            "questions": [
+                "Quel élément doit être associé à un `<input>` pour des questions d'accessibilité et de validité du formulaire ?",
+                "Quel élément utilise-t-on pour créer un champ de texte dans un formulaire, `<input type='text'>` ou `<input type='field'>` ?",
+                "Quelle paire d'éléments permet de créer une sous-section dans un formulaire et d'y ajouter des instructions ou des précisions ?",
+                "Comment faire pour permettre aux utilisateurs d'envoyer un selfie via un formulaire ?",
+                "Quelle valeur autre que `get` et `post` peut-on donner à l'attribut `action` d'un formulaire ?"
+            ],
+            "answers": [
+                "Il faut toujours associer un élément `<label>` à un champ de formulaire.",
+                "On utilise `type='text'`, mais `type='field'` fonctionne tout de même car l'attribut type par défaut est `text` et `field` n'existe pas.",
+                "On délimite un groupe de champs avec `<fieldset>`, auquel on associera l'élément `<legend>`.",
+                "On ajoute à un <input type='file'> l'attribut `capture='user'`.",
+                "La valeur `dialog`, qui permet de fermer une boîte de dialogue (`<dialog>`) dans laquelle le formulaire est contenu."
+            ]
+        },
+        {
             "theme": "Framework JS",
             "category": "dev-front",
             "questions": [
