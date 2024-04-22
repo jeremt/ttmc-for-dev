@@ -211,8 +211,8 @@
             "answers": [
                 "Elle permet d'envoyer ses commits en local sur la remote (github par exemple).",
                 "`git log`",
-                "C'est Linus Torwald qui a inventé GIT en 2005.",
-                "On utilise le mot clé `squash` ou `fixup`. `Fixup` garde uniquement le dernier message et `squash` les gardent tous.",
+                "C'est Linus Torvalds qui a inventé GIT en 2005.",
+                "On utilise le mot clé `squash` ou `fixup`. `Fixup` garde uniquement le dernier message et `squash` les garde tous.",
                 "Elle permet d'appliquer le code d'un commit précis à notre état courant."
             ]
         },
