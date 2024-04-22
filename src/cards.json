@@ -221,18 +221,36 @@
             "theme": "GIT #2",
             "category": "dev-tools",
             "questions": [
-                "Lequel de ces services d’hébergement de repository n’existe pas: `GitLab`, `GitGud` ou `BitBucket` ?",
+                "Lequel de ces services d’hébergement n’existe pas: 'GitLab', 'GitGud' ou 'BitBucket' ?",
                 "Quelle option permet de définir le message d’un commit directement depuis le terminal ?",
                 "Que fait la commande `Git revert` ?",
                 "Comment faire pour stager une partie seulement des changements introduits dans un fichier ?",
                 "Comment faire pour restaurer des fichiers et des commits locaux supprimés par un rebase ?"
             ],
             "answers": [
-                "GitGud n’existe pas encore, dommage pour les fans de la série Dark Souls.",
+                "GitGud n’existe pas encore, dommage pour les fans de Dark Souls 🙏☀️ .",
                 "L’option `-m` ou `--message=` suivi d’une chaîne de caractères.",
                 "Elle crée un commit qui annule les changements d’un commit antérieur.",
                 "`Git add –patch` permet de décider bloc par bloc quels changements ajouter à l’index.",
                 "`Git reflog` permet d'accéder à un historique détaillé contenant les commits supprimés."
+            ]
+        },
+        {
+            "theme": "Neovim",
+            "category": "dev-tools",
+            "questions": [
+                "Quel était l'ancêtre de Neovim, 'Vim' ou 'Neo' ? (+ 1 si tu peux remonter sur deux générations)",
+                "Quel sont les commandes par défaut pour déplacer le curseur ?",
+                "Quel langage remplace progressivement le Vimscript pour configurer Neovim ?",
+                "Comment faire pour formatter un fichier lorsqu'on sauvegarde ?",
+                "Quelle technologie permet à Neovim de s'adapter au langage utilisé, par exemple pour afficher des suggestions ?"
+            ],
+            "answers": [
+                "Vim (Visual IMproved), lui même dérivé de 'vi'. ",
+                "'h' (gauche), 'j' (bas), 'k' (haut) et 'l' (gauche). ",
+                "Le Lua, simple à prendre en main et suffisament puissant pour créer des configurations avancées.",
+                "On peut créer une commande automatique avec vim.api.nvim_create_autocmd('Name',  { command }).",
+                "Le Language Server Protocol, qui permet de récuperer les infos nécessaires sur un Language Server dédié."
             ]
         },
         {
