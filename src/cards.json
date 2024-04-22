@@ -217,6 +217,24 @@
             ]
         },
         {
+            "theme": "GIT #2",
+            "category": "dev-tools",
+            "questions": [
+                "Lequel de ces services d’hébergement de repository n’existe pas: `GitLab`, `GitGud` ou `BitBucket` ?",
+                "Quelle option permet de définir le message d’un commit directement depuis le terminal ?",
+                "Que fait la commande `Git revert` ?",
+                "Comment faire pour stager une partie seulement des changements introduits dans un fichier ?",
+                "Comment faire pour restaurer des fichiers et des commits locaux supprimés par un rebase ?"
+            ],
+            "answers": [
+                "GitGud n’existe pas encore, dommage pour les fans de la série Dark Souls.",
+                "L’option `-m` ou `--message=` suivi d’une chaîne de caractères.",
+                "Elle crée un commit qui annule les changements d’un commit antérieur.",
+                "`Git add –patch` permet de décider bloc par bloc quels changements ajouter à l’index.",
+                "`Git reflog` permet d'accéder à un historique détaillé contenant les commits supprimés."
+            ]
+        },
+        {
             "theme": "VSCode",
             "category": "dev-tools",
             "questions": [
