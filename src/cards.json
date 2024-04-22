@@ -20,6 +20,24 @@
             ]
         },
         {
+            "theme": "Tableaux en Javascript",
+            "category": "dev-front",
+            "questions": [
+                "Comment accéde-t-on au dernier élément d'un tableau en JS ? (+ 1 si tu connais deux méthodes)",
+                "Peut-on modifier le contenu d'un tableau déclaré avec le mot-clé `const` ?",
+                "Les tableaux sont-ils implementés de la même manière que dans la plupart des languages ?",
+                "`Array(1) === [undefined] && Array(1)[0] === undefined`, ça revoie `true` ou `false` ?",
+                "Quel serait le résultat de [1,'80', 9, '16'].sort() ?"
+            ],
+            "answers": [
+                "`arr[length - 1]` ou `arr.findLast(el => el)`",
+                "Oui, car la variable fait réference au tableau pas à son contenu et cette réference ne change pas.",
+                "Non, en général un tableau correspond à une plage d'adresses mémoire dont la taille est fixe.",
+                "False! Les éléments vides ne sont pas explicitement indéfinis, mais tenter d'y accéder renvoie `undefined`.",
+                "[1, '16', '80', 9], car par défaut, Array.sort() converti les éléments en chaînes de caractères et compare leur valeur Unicode."
+            ]
+        },
+        {
             "theme": "HTML",
             "category": "dev-front",
             "questions": [
@@ -35,6 +53,24 @@
                 "On utilise l'attribut `target=\"_blank\"`.",
                 "L'attribut `defer`, exemple : `<script defer src=\"index.js\"></script>`.",
                 "Le prefix `aria-` qui signifie Accessible Rich Internet Applications."
+            ]
+        },
+        {
+            "theme": "Formulaires HTML",
+            "category": "dev-front",
+            "questions": [
+                "Quel élément doit être associé à un `<input>` pour des questions d'accessibilité et de validité du formulaire ?",
+                "Quel élément utilise-t-on pour créer un champ de texte dans un formulaire, `<input type='text'>` ou `<input type='field'>` ?",
+                "Quelle paire d'éléments permet de créer une sous-section dans un formulaire et d'y ajouter des instructions ou des précisions ?",
+                "Comment faire pour permettre aux utilisateurs d'envoyer un selfie via un formulaire ?",
+                "Quelle valeur autre que `get` et `post` peut-on donner à l'attribut `action` d'un formulaire ?"
+            ],
+            "answers": [
+                "Il faut toujours associer un élément `<label>` à un champ de formulaire.",
+                "On utilise `type='text'`, mais `type='field'` fonctionne car l'attribut par défaut est `text` et `field` n'existe pas.",
+                "On délimite un groupe de champs avec `<fieldset>`, auquel on associera l'élément `<legend>`.",
+                "On ajoute à un `<input type='file'>` l'attribut `capture='user'`.",
+                "La valeur `dialog`, qui permet de fermer une boîte de dialogue (`<dialog>`) dans laquelle le formulaire est contenu."
             ]
         },
         {
@@ -110,6 +146,42 @@
             ]
         },
         {
+            "theme": "Classes en Python",
+            "category": "dev-back",
+            "questions": [
+                "Quelle convention applique-t-on aux noms de classes, 'snake_case', 'PascalCase' ou 'KantCase' ?",
+                "Quel mot-clé fait référence à un attribut d'instance, `self` ou `this` ?",
+                "Quelle alternative à l'initialisation `()` peut-on utiliser pour créer une instance de classe ?",
+                "Peut-on accéder directement à un attribut d'instance définit par un nom commençant par un `_` ?",
+                "Comment créer une propriété calculée ?"
+            ],
+            "answers": [
+                "'PascalCase', en référence au langage Pascal, qui doit son nom au philosophe et mathématicien Blaise Pascal. ",
+                "`self`, `this` est l'équivalent en Javascript.",
+                "On peut définir une méthode de classe qui renvoie une instance, on parle alors de 'factory method' (méthode usine).",
+                "Oui, les attributs privés n'existent pas réellement en Python.",
+                "On utilise le décorateur `@property` pour définir une méthode à laquelle on peut accéder avec la syntaxe `class.property`."
+            ]
+        },
+        {
+            "theme": "Structures de données en Python",
+            "category": "dev-back",
+            "questions": [
+                "A quelle structure de données correspond la notation entre crochets ?",
+                "Laquelle de ces structures de données n'existe pas par défaut: 'set', 'array' ou 'dict' ?",
+                "Quelle est la différence entre `sorted(list)` et `list.sort()` ?",
+                "Pourquoi utiliser `dict.items()` plutot que `list(dict)` ?",
+                "Le code `def function(): return 1, 2, 3, 4` -> `a, b, c, d = function();` est valide, pourquoi ?"
+            ],
+            "answers": [
+                "'list', similaire aux tableaux en Javascript.",
+                "'array', correspondant aux tableaux au sens classique. Ils sont disponibles dans la librairie NumPy.",
+                "`sorted()` renvoie une copie triée de la liste, alors que `list.sort()` modifie directement la liste existante.",
+                "`dict.items()` permet d'itérer en accédant aux clés et aux valeurs, `list(dict)` ne comprends que les clés.",
+                "La fonction retourne implicitement un `tuple` et assigne automatiquement les entrées aux variables."
+            ]
+        },
+        {
             "theme": "Requêtes SQL",
             "category": "dev-back",
             "questions": [
@@ -140,9 +212,45 @@
             "answers": [
                 "Elle permet d'envoyer ses commits en local sur la remote (github par exemple).",
                 "`git log`",
-                "C'est Linus Torwald qui a inventé GIT en 2005.",
-                "On utilise le mot clé `squash` ou `fixup`. `Fixup` garde uniquement le dernier message et `squash` les gardent tous.",
+                "C'est Linus Torvalds qui a inventé GIT en 2005.",
+                "On utilise le mot clé `squash` ou `fixup`. `Fixup` garde uniquement le dernier message et `squash` les garde tous.",
                 "Elle permet d'appliquer le code d'un commit précis à notre état courant."
+            ]
+        },
+        {
+            "theme": "GIT #2",
+            "category": "dev-tools",
+            "questions": [
+                "Lequel de ces services d’hébergement n’existe pas: 'GitLab', 'GitGud' ou 'BitBucket' ?",
+                "Quelle option permet de définir le message d’un commit directement depuis le terminal ?",
+                "Que fait la commande `Git revert` ?",
+                "Comment faire pour stager une partie seulement des changements introduits dans un fichier ?",
+                "Comment faire pour restaurer des fichiers et des commits locaux supprimés par un rebase ?"
+            ],
+            "answers": [
+                "GitGud n’existe pas encore, dommage pour les fans de Dark Souls 🙏☀️ .",
+                "L’option `-m` ou `--message=` suivi d’une chaîne de caractères.",
+                "Elle crée un commit qui annule les changements d’un commit antérieur.",
+                "`Git add –patch` permet de décider bloc par bloc quels changements ajouter à l’index.",
+                "`Git reflog` permet d'accéder à un historique détaillé contenant les commits supprimés."
+            ]
+        },
+        {
+            "theme": "Neovim",
+            "category": "dev-tools",
+            "questions": [
+                "Quel était l'ancêtre de Neovim, 'Vim' ou 'Neo' ? (+ 1 si tu peux remonter sur deux générations)",
+                "Quel sont les commandes par défaut pour déplacer le curseur ?",
+                "Quel langage remplace progressivement le Vimscript pour configurer Neovim ?",
+                "Comment faire pour formatter un fichier lorsqu'on sauvegarde ?",
+                "Quelle technologie permet à Neovim de s'adapter au langage utilisé, par exemple pour afficher des suggestions ?"
+            ],
+            "answers": [
+                "Vim (Visual IMproved), lui même dérivé de 'vi'. ",
+                "'h' (gauche), 'j' (bas), 'k' (haut) et 'l' (gauche). ",
+                "Le Lua, simple à prendre en main et suffisament puissant pour créer des configurations avancées.",
+                "On peut créer une commande automatique avec vim.api.nvim_create_autocmd('Name',  { command }).",
+                "Le Language Server Protocol, qui permet de récuperer les infos nécessaires sur un Language Server dédié."
             ]
         },
         {
@@ -179,6 +287,24 @@
                 "On utilise `$`, par exemple `echo $PWD` affiche la variable PWD qui contient le dossier courant.",
                 "`chmod +w file.txt` ajoute les droits d'écritures pour tout type d'utilisateur",
                 "On utilise `&` suivi de `> /dev/null` pour rediriger les messages."
+            ]
+        },
+        {
+            "theme": "Commandes shell #2",
+            "category": "dev-tools",
+            "questions": [
+                "Comment s'appelle l'utilitaire de ligne de commande le plus populaire sur Linux, `Bash` ou `Cash` ?",
+                "La commande `touch` sert à dater un fichier, mais elle permet aussi de... ?",
+                "Parmi les commandes `rn`, `rename` et `mv`, lesquelles permettent de renommer un fichier ?",
+                "Quelle commande permet d'effectuer des recherches très précises dans les fichiers et dossiers ?",
+                "Que signifie chaque chiffre dans la commande `chmod 750` ?"
+            ],
+            "answers": [
+                "Bash, pour Bourne-Again SHell. Bash est à la fois un utilitaire (un `shell`) et un language de programmation.",
+                "Créer un fichier s'il n'existe pas tout en évitant de l'écraser s'il existe déjà, contrairement à `make`.",
+                "Par défaut seul `mv` est disponible sur toutes les distributions Linux, mais certaines disposent de `rename`.",
+                "La commande `grep`, qui compare les chaines de caractères présentes dans les données avec un schéma fourni.",
+                "Le 7 signifie `propriétaires: tous les droits`, le 5 `groupes: lire/exécuter` et le 0 `autres: aucun droit`."
             ]
         },
         {
